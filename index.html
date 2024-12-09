@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Fly - Luxury Jet Flights</title>
+  <meta name="title" content="Fly - Luxury Jet Flights">
+  <meta name="description" content="This is a private flight html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+  
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="102" height="48" alt="Sky Libya Logo">
+      </a>
+  
+      <nav class="navbar" data-navbar>
+  
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="102" height="48" alt="Sky Libya Logo">
+          </a>
+  
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+  
+        <ul class="navbar-list">
+  
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+  
+          <li class="navbar-item dropdown">
+            <a href="#services" class="navbar-link" data-dropdown-toggler>Services</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="#charter-flights">Charter Flights</a></li>
+              <li class="dropdown-item"><a href="#cargo-transport">Cargo Transport</a></li>
+              <li class="dropdown-item"><a href="#aircraft-maintenance">Aircraft Maintenance</a></li>
+              <li class="dropdown-item"><a href="#offshore-support">Offshore Support</a></li>
+            </ul>
+          </li>
+               
+  
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>About us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+  
+        </ul>
+  
+      </nav>
+  
+      <div class="header-action">
+        <button class="header-action-btn nav-open-btn" aria-label="menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+  
+      <div class="overlay" data-nav-toggler data-overlay></div>
+  
+    </div>
+  </header>
+  
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+      
+          <div class="hero-text">
+            <p class="hero-subtitle">Sky Libya Aviation</p>
+            <h1 class="hero-title">
+              Fly with Confidence, Comfort, <br>
+              <span class="highlight">AND LUXURY</span>
+            </h1>
+            <p class="hero-description">
+              Elevate your travel experience with our premier charter flights, reliable cargo services, and world-class aviation solutions.
+            </p>
+          </div>
+          
+      
+          <div class="btn-wrapper">
+            <a href="#services" class="btn btn-primary">Book a Flight</a>
+            <a href="#about" class="btn btn-secondary">Learn More</a>
+          </div>
+      
+          <img src="./assets/images/hero-banner.png" alt="Luxury airplane" class="abs-img">
+      
+        </div>
+      </section>
+      
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+      <section class="section service" aria-label="service">
+        <div class="container">
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-description">
+            At Sky Libya, we provide reliable, high-quality aviation solutions tailored to your needs.
+          </p>
+      
+          <ul class="grid-list">
+      
+            <!-- Charter Flights -->
+            <li>
+              <div class="service-card">
+                <ion-icon name="airplane-outline" aria-hidden="true"></ion-icon>
+                <h3 class="h3">
+                  <a href="#" class="card-title">Charter Flights</a>
+                </h3>
+                <p class="service-detail">
+                  Enjoy exclusive and personalized charter flight services for business or leisure.
+                </p>
+              </div>
+            </li>
+      
+            <!-- Cargo Transport -->
+            <li>
+              <div class="service-card">
+                <ion-icon name="cube-outline" aria-hidden="true"></ion-icon>
+                <h3 class="h3">
+                  <a href="#" class="card-title">Cargo Transport</a>
+                </h3>
+                <p class="service-detail">
+                  Secure and efficient transportation solutions for your cargo, no matter the size.
+                </p>
+              </div>
+            </li>
+      
+            <!-- Aircraft Maintenance -->
+            <li>
+              <div class="service-card">
+                <ion-icon name="build-outline" aria-hidden="true"></ion-icon>
+                <h3 class="h3">
+                  <a href="#" class="card-title">Aircraft Maintenance</a>
+                </h3>
+                <p class="service-detail">
+                  World-class maintenance services to keep your aircraft in peak condition.
+                </p>
+              </div>
+            </li>
+      
+            <!-- Offshore Support -->
+            <li>
+              <div class="service-card">
+                <ion-icon name="locate-outline" aria-hidden="true"></ion-icon>
+                <h3 class="h3">
+                  <a href="#" class="card-title">Offshore Support</a>
+                </h3>
+                <p class="service-detail">
+                  Comprehensive offshore aviation support for your operations.
+                </p>
+              </div>
+            </li>
+      
+          </ul>
+        </div>
+      </section>
+
+      
+      
+      
+      <section class="plane-animation-section">
+        <div class="plane-container">
+          <img src="./assets/images/plan-2.png" alt="Plane" class="plane">
+        </div>
+      </section>
+      
+      
+      
+      
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+      
+          <div class="about-content">
+      
+            <p class="section-subtitle">Get to Know Sky Libya</p>
+      
+            <h2 class="h2 section-title">Redefining Air Travel with Excellence and Comfort</h2>
+      
+            <p class="section-text">
+              At Sky Libya, we are committed to revolutionizing air travel by providing personalized, reliable, and luxurious aviation experiences. Whether you’re flying for business or leisure, we ensure every journey is seamless and memorable.
+            </p>
+      
+            <ul class="about-list">
+      
+              <li class="about-list-item">
+                <ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>
+                <p class="item-text">Tailored services to meet your unique travel needs.</p>
+              </li>
+      
+              <li class="about-list-item">
+                <ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>
+                <p class="item-text">A trusted partner with years of aviation expertise.</p>
+              </li>
+      
+            </ul>
+      
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+      
+          </div>
+      
+          <figure class="about-banner img-holder" style="--width: 470; --height: 550;">
+            <img src="./assets/images/about-banner.jpg" width="470" height="550" loading="lazy" alt="Luxury Helicopter"
+              class="img-cover">
+          </figure>
+      
+        </div>
+      </section>
+      
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-label="feature">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="feature-content has-before">
+      
+                <p class="section-subtitle">Safety First</p>
+      
+                <h2>
+                  <a href="#" class="section-title">Your Safety Is Our Priority</a>
+                </h2>
+      
+                <p class="section-text">
+                  Sky Libya ensures the highest standards of safety and reliability, giving you peace of mind on every journey.
+                </p>
+      
+                <a href="#about" class="btn btn-secondary">Book a consultation </a>
+      
+              </div>
+            </li>
+
+            <li>
+              <div class="feature-card has-before has-after img-holder"
+                style="--width: 370; --height: 452; background-image: url('./assets/images/feature-1.jpg')">
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Exclusive <br> new offers</a>
+                </h3>
+
+                <a href="#" class="card-btn">
+                  <ion-icon name="arrow-forward" aria-hidden"true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="feature-card has-before has-after img-holder"
+                style="--width: 370; --height: 452; background-image: url('./assets/images/feature-2.jpg')">
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Personalized Services</a>
+                </h3>
+
+                <a href="#" class="card-btn">
+                  <ion-icon name="arrow-forward" aria-hidden"true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #OFFER
+      -->
+
+      <section class="offer" aria-label="offer">
+
+        <div class="offer-content section" style="background-image: url('./assets/images/offer-bg.png')">
+          <div class="container">
+
+            <p class="section-subtitle">Special Offer</p>
+
+            <h2 class="h2 section-title">The best service for business people who appreciate time</h2>
+
+            <p class="section-text">
+              Non augue egestas, commodo velit eget, vestibulum tellus. Curabitur vulputate justo elit, at elementum
+              pulvinar.
+              Pellentesque habitant morbi tristique.
+            </p>
+
+            <a href="#" class="btn btn-primary">Book a consultation</a>
+
+          </div>
+        </div>
+
+        <div class="offer-banner has-bg-image" style="background-image: url('./assets/images/offer-banner.jpg')"></div>
+
+      </section>
+
+ <!-- 
+        - #why us
+      -->
+
+      <section class="trust-section" aria-label="Why Clients Trust Us">
+        <div class="container">
+      
+          <!-- Title and Subtitle -->
+          <div class="trust-header">
+            <p class="trust-subtitle">
+              <ion-icon name="airplane-outline" class="trust-icon-plane" aria-hidden="true"></ion-icon> 
+              Why Sky Libya Aviation
+            </p>
+            <h2 class="trust-title">
+              <span class="light-text">10 reasons</span> why clients trust us.
+            </h2>
+          </div>
+      
+          <!-- Grid Content -->
+          <div class="trust-grid">
+            <div class="trust-card">
+              <ion-icon name="person-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle">Expertise</h3>
+              <p class="trust-text">Experienced professionals managing every aspect of aviation services.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="pricetags-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle">Cost Efficiency</h3>
+              <p class="trust-text">Offering cost-effective solutions without compromising quality.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="time-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle">Time Savings</h3>
+              <p class="trust-text">Streamlined processes to save your valuable time.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="shield-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle">Safety First</h3>
+              <p class="trust-text">Adhering to the highest safety standards in the aviation industry.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="construct-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle">Maintenance</h3>
+              <p class="trust-text">World-class maintenance to keep aircraft in top condition.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="document-text-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle">Regulatory Compliance</h3>
+              <p class="trust-text">Ensuring full compliance with aviation regulations.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="earth-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle">Global Reach</h3>
+              <p class="trust-text">Operating across international destinations with ease.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="cash-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle">Transparent Pricing</h3>
+              <p class="trust-text">No hidden fees, clear and honest pricing.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="people-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle">Customer-Centric</h3>
+              <p class="trust-text">Services tailored to individual customer needs and preferences.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="speedometer-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle">Efficiency</h3>
+              <p class="trust-text">Fast and reliable operations for a smooth experience.</p>
+            </div>
+          </div>
+      
+          <!-- Footer Summary and Button -->
+          <div class="trust-footer">
+            <p class="trust-summary">
+              Partner with Sky Libya for comprehensive aviation solutions tailored to your needs.<br>
+              Experience seamless travel, reliable cargo services,<br>
+              and exceptional customer care.
+            </p>
+            <a href="#contact" class="btn-1 btn-primary-1">Book A Consultation</a>
+          </div>
+      
+        </div>
+      </section>
+      
+
+
+
+
+      <!-- 
+        - #FLIGHT
+      -->
+
+      <section class="section flight" aria-label="privet flight">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="flight-content">
+
+                <p class="section-subtitle">Private Flights</p>
+
+                <h2 class="h2 section-title">Browse legs of our charters</h2>
+
+                <p class="section-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum, lacus non faucibus
+                  congue, lectus quam
+                  viverra nulla, quis egestas neque sapien ac magna.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="flight-card">
+
+                <h3 class="card-title">
+                  New York
+                  <ion-icon name="airplane" aria-hidden="true"></ion-icon>
+                  Moscow
+                </h3>
+
+                <div class="card-banner">
+                  <img src="./assets/images/flight-1.png" width="263" height="84" loading="lazy"
+                    alt="new york to moscow flight airplane" class="w-100">
+                </div>
+
+                <ul class="card-list">
+
+                  <li class="card-item">
+                    <span class="span">Date:</span>
+                    Tuesday, Jul 6, 2022
+                  </li>
+
+                  <li class="card-item">
+                    <span class="span">Departure:</span>
+                    11:25 pm
+                  </li>
+
+                  <li class="card-item">
+                    <span class="span">Arrival:</span>
+                    02:25 am
+                  </li>
+
+                  <li class="card-item">
+                    <span class="span">Starting From:</span>
+                    $2786
+                  </li>
+
+                  <li class="card-item">
+                    <span class="span">Person:</span>
+                    Adult 3
+                  </li>
+
+                </ul>
+
+                <a href="#" class="btn btn-primary">Book Now</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="flight-card">
+
+                <h3 class="card-title">
+                  New York
+                  <ion-icon name="airplane" aria-hidden="true"></ion-icon>
+                  Moscow
+                </h3>
+
+                <div class="card-banner">
+                  <img src="./assets/images/flight-1.png" width="263" height="84" loading="lazy"
+                    alt="new york to moscow flight airplane" class="w-100">
+                </div>
+
+                <ul class="card-list">
+
+                  <li class="card-item">
+                    <span class="span">Date:</span>
+                    Tuesday, Jul 6, 2022
+                  </li>
+
+                  <li class="card-item">
+                    <span class="span">Departure:</span>
+                    11:25 pm
+                  </li>
+
+                  <li class="card-item">
+                    <span class="span">Arrival:</span>
+                    02:25 am
+                  </li>
+
+                  <li class="card-item">
+                    <span class="span">Starting From:</span>
+                    $2786
+                  </li>
+
+                  <li class="card-item">
+                    <span class="span">Person:</span>
+                    Adult 3
+                  </li>
+
+                </ul>
+
+                <a href="#" class="btn btn-primary">Book Now</a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter has-bg-image"
+        style="background-image: url('./assets/images/newsletter-bg.png')" aria-label="newsletter">
+        <div class="container">
+
+          <div>
+            <p class="section-subtitle">Subscribe Now</p>
+
+            <h2 class="h2 section-title">Want to know about our offers first?</h2>
+          </div>
+
+          <div>
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Enter email address" class="input-field">
+
+              <button type="submit" class="btn btn-secondary">
+                Subscribe
+
+                <ion-icon name="airplane" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="footer-top section grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="102" height="48" alt="fly logo">
+          </a>
+
+          <p class="footer-text">
+            Private jet charters save your time and give you comfort.
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Explore</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Private Jet Catering</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Destinations</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Flight Search</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Book Flight</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">News & Press</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Games</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQs</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact</p>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+0123456780" class="footer-link">+01 ( 2345 ) - 6780</a>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="mail" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:fly@info.com" class="footer-link">fly@info.com</a>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="location" aria-hidden="ture"></ion-icon>
+
+            <address class="address">
+              30 broklyn golden street. New York
+            </address>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          Copyright 2022 by codewithsadee.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
