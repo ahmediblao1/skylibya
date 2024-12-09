@@ -163,3 +163,37 @@ document.addEventListener("DOMContentLoaded", () => {
 //     lastScrollPosition = currentScrollPosition;
 //   });
 // });
+
+
+
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent the default form submission
+
+  emailjs
+    .sendForm("service_jx5vlml", "template_25jwzha", this, "zUrh3TGnznuGNYWap")
+    .then(
+      function () {
+        alert("Your message has been sent successfully!");
+      },
+      function (error) {
+        alert("Failed to send your message. Please try again.");
+        console.error("EmailJS error:", error);
+      }
+    );
+});
+
+
+
+
+function sendEmail() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const message = document.getElementById('message').value;
+
+  const subject = 'New Inquiry';
+  const body = `Hello,%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
+
+  const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+  window.location.href = mailtoLink;
+}
