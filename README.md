@@ -1,4 +1,4 @@
-<div align="center">
+<!-- <div align="center">
 
   <h2 align="center">Fly - Flight Website</h2>
 
@@ -40,4 +40,4 @@ git clone https://github.com/codewithsadee/fly.git
 
 ### License
 
-This project is **free to use** and does not contains any license.
+This project is **free to use** and does not contains any license. -->
