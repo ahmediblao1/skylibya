@@ -3,7 +3,6 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
  */
 
 
@@ -381,7 +380,7 @@
     top: calc(100% + 5px); /* Place dropdown below the parent */
     left: 50%;
     transform: translateX(-50%); /* Center align */
-    background-color: #fff;
+    background-color: var(--vegas-gold);
     padding: 10px 15px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -391,15 +390,15 @@
   }
   
   .dropdown-item a {
-    color: var(--phthalo-green-2); /* Default text color */
+    color: var(--white); /* Default text color */
     text-decoration: none;
     font-size: var(--fs-8);
-    padding: 5px 0;
+    padding: 5px 5px;
     display: block;
   }
   
   .dropdown-item a:hover {
-    color: var(--satin-sheen-gold); /* Highlight color */
+    color: var(--phthalo-green-2); /* Highlight color */
   }
   
   /* Add a downward arrow to indicate dropdown */
@@ -600,25 +599,33 @@ textarea {
         background-color: var(--vegas-gold);
         color: var(--phthalo-green-1);
       }
-      
       .image-section {
         flex: 1;
         max-width: 100%;
         position: relative;
         margin-top: 0;
-
+        overflow: hidden; /* Ensures the image stays within the section */
       }
       
       .img-cover {
         width: 100%;
         height: auto;
-       
+        transform: translateX(-100%); /* Initially hidden to the left */
+        animation: slideIn 1.5s ease-out forwards; /* Add the animation */
       }
-      
       .image-caption {
         font-size: var(--fs-7);
-        color: var(--medium-champagne);
+        color: var(--white);
         text-align: center;
+      }
+      
+      @keyframes slideIn {
+        0% {
+          transform: translateX(-100%); /* Start from the left */
+        }
+        100% {
+          transform: translateX(0); /* End in the original position */
+        }
       }
       
 
@@ -754,19 +761,17 @@ textarea {
     }
   }
   
-  .img-cover {
+
+  /* .img-cover {
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
-    animation: float 4s infinite ease-in-out; /* Continuous animation */
+    animation: float 4s infinite ease-in-out; 
     transition: transform 0.5s ease-in-out;
   }
-  
-  .img-cover:hover {
-    transform: scale(1.1); /* Zoom-in on hover */
-  }
-  
+   */
  
+  
   /*-----------------------------------*\
     #BACK TO TOP
   \*-----------------------------------*/

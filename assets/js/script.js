@@ -166,39 +166,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-  e.preventDefault(); // Prevent the default form submission
+// document.getElementById("contact-form").addEventListener("submit", function (e) {
+//   e.preventDefault(); // Prevent the default form submission
 
-  emailjs
-    .sendForm("service_jx5vlml", "template_25jwzha", this, "zUrh3TGnznuGNYWap")
-    .then(
-      function () {
-        alert("Your message has been sent successfully!");
-      },
-      function (error) {
-        alert("Failed to send your message. Please try again.");
-        console.error("EmailJS error:", error);
-      }
-    );
-});
+//   emailjs
+//     .sendForm("service_jx5vlml", "template_25jwzha", this, "zUrh3TGnznuGNYWap")
+//     .then(
+//       function () {
+//         alert("Your message has been sent successfully!");
+//       },
+//       function (error) {
+//         alert("Failed to send your message. Please try again.");
+//         console.error("EmailJS error:", error);
+//       }
+//     );
+// });
 
 
-
+document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form from reloading the page
 
     sendEmail();
   });
+});
 
-  function sendEmail() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const message = document.getElementById('message').value;
+function sendEmail() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const message = document.getElementById('message').value;
 
-    const subject = 'New Inquiry';
-    const body = `Hello,%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
+  const subject = 'New Inquiry';
+  const body = `Hello,%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
 
-    const mailtoLink = `mailto:info@skylibya.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-    window.location.href = mailtoLink;
-  }
+  const mailtoLink = `mailto:info@skylibya.net?subject=${encodeURIComponent(subject)}&body=${body}`;
+  window.location.href = mailtoLink;
+}
+
+  

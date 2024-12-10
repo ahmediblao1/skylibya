@@ -3,9 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
  */
-
 
 
 
@@ -817,6 +815,23 @@ body.active { overflow: hidden; }
 
 
 
+.about-banner {
+  opacity: 0; /* Start fully transparent */
+  transform: scale(0.8); /* Slightly smaller */
+  animation: fadeIn 1.5s ease-out forwards; /* Animation definition */
+  
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Fully transparent */
+    transform: scale(0.8); /* Smaller size */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Original size */
+  }
+}
 
 
 /*-----------------------------------*\
@@ -1507,6 +1522,8 @@ body.active { overflow: hidden; }
 
 
 
+
+
 /**
  * responsive for large than 992px screen
  */
@@ -1528,6 +1545,7 @@ body.active { overflow: hidden; }
   }
 
 
+  
 
   /**
    * REUSED STYLE
