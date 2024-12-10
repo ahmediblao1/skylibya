@@ -104,32 +104,6 @@ document.addEventListener("click", (event) => {
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const plane = document.querySelector(".plane");
-  let lastScrollPosition = 0;
-  let planePosition = 0; // Initial position of the plane
-
-  window.addEventListener("scroll", () => {
-    const currentScrollPosition = window.scrollY;
-
-    if (currentScrollPosition > lastScrollPosition) {
-      // Scrolling down
-      planePosition += 10; // Move plane to the right
-    } else {
-      // Scrolling up
-      planePosition -= 10; // Move plane to the left
-    }
-
-    // Apply position to the plane
-    plane.style.left = `${planePosition}px`;
-
-    // Update the last scroll position
-    lastScrollPosition = currentScrollPosition;
-    planePosition = Math.max(-300, Math.min(window.innerWidth, planePosition));
-
-  });
-});
-
 
 
 
@@ -204,4 +178,74 @@ function sendEmail() {
   window.location.href = mailtoLink;
 }
 
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const plane = document.querySelector(".plane");
+  let lastScrollPosition = 0;
+  let planePosition = 0; // Initial position of the plane
+
+  window.addEventListener("scroll", () => {
+    const currentScrollPosition = window.scrollY;
+
+    if (currentScrollPosition > lastScrollPosition) {
+      // Scrolling down
+      planePosition += 10; // Move plane to the right
+    } else {
+      // Scrolling up
+      planePosition -= 10; // Move plane to the left
+    }
+
+    // Apply position to the plane
+    plane.style.left = `${planePosition}px`;
+
+    // Update the last scroll position
+    lastScrollPosition = currentScrollPosition;
+    planePosition = Math.max(-300, Math.min(window.innerWidth, planePosition));
+
+  });
+});
+
+
+
+
   
+
+const planeContainer = document.querySelector('.plane-container');
+let lastScrollTop = window.scrollY || document.documentElement.scrollTop;
+let currentPosition = 0; // Current position of the plane
+let targetPosition = 0; // Target position for smooth transition
+const speed = 0.1; // Adjust the smoothness (lower is smoother)
+
+function smoothScrollEffect() {
+  // Gradually interpolate the current position to the target position
+  currentPosition += (targetPosition - currentPosition) * speed;
+
+  // Apply the smooth movement to the plane
+  planeContainer.style.transform = `translate(calc(-50% + ${currentPosition}px), -50%)`;
+
+  // Continue the animation
+  requestAnimationFrame(smoothScrollEffect);
+}
+
+// Update the target position based on scroll
+window.addEventListener('scroll', () => {
+  const currentScroll = window.scrollY || document.documentElement.scrollTop;
+  const direction = currentScroll > lastScrollTop ? 1 : -1; // Down (-1) or up (+1)
+
+  // Update the target position gradually
+  targetPosition += direction * 10; // Adjust 10 for sensitivity
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
+});
+
+// Start the smooth scroll animation
+smoothScrollEffect();
+
+
+
+
+

@@ -198,6 +198,8 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
+
+
 .btn-primary,
 .btn-secondary:is(:hover, :focus) {
   background-color: var(--satin-sheen-gold);
@@ -488,6 +490,7 @@ body.active { overflow: hidden; }
   display: block; /* Forces "and Luxury" onto a new line */
   color: var(--satin-sheen-gold);
 }
+
 
 
 .hero-title {
@@ -1049,6 +1052,16 @@ body.active { overflow: hidden; }
   line-height: 1.6;
 }
 
+/* .btn-1 {
+  font-size: var(--fs-8);
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  letter-spacing: 1px;
+  padding: 20px 55px;
+  max-width: max-content;
+  border-radius: var(--radius-pill);
+  transition: var(--transition-1);
+} */
 .btn-primary-1 {
   background-color: var(--satin-sheen-gold);
   color: var(--phthalo-green-2);
@@ -1375,6 +1388,109 @@ body.active { overflow: hidden; }
 
 
 
+
+
+  /* scroll plan animation */
+
+
+.scroll-effect-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: var(--phthalo-green-2);
+  }
+  
+  /* Plane Container */
+  .plane-container {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease-out; /* Smooth transitions */
+  }
+  
+  .plane-image {
+    width: auto;
+    height: 300px;
+  }
+  
+  /* Text Bar Styling */
+  .scroll-text-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: var(--vegas-gold);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .scroll-text {
+    display: inline-flex;
+    animation: scrollText 50s linear infinite; /* Smooth horizontal scrolling */
+  }
+  
+  .scroll-text span {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+  
+  /* Animation for Text Bar */
+  @keyframes scrollText {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+
+
+  .scroll-effect-section-2 {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background: var(--phthalo-green-2);
+  }
+  
+  /* Text Bar Styling */
+  .scroll-text-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: var(--vegas-gold);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .scroll-text {
+    display: inline-flex;
+    animation: scrollText 50s linear infinite; /* Smooth horizontal scrolling */
+  }
+  
+  .scroll-text span {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+  
+  /* Animation for Text Bar */
+  @keyframes scrollText {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+
+
+  
+
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -1463,6 +1579,10 @@ body.active { overflow: hidden; }
 
 
 
+
+  
+
+
   /**
    * HERO
    */
@@ -1546,6 +1666,7 @@ body.active { overflow: hidden; }
 
 
   
+
 
   /**
    * REUSED STYLE
