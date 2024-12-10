@@ -450,7 +450,7 @@
       /* Text Bar Styling */
       .scroll-text-bar {
         position: absolute;
-        bottom: 0;
+        bottom: 10;
         width: 100%;
         background: var(--phthalo-green-2);
         overflow: hidden;
@@ -614,12 +614,14 @@
   
 .abs-img {
     position: absolute;
-    bottom: -5px; /* Slightly lowered to avoid overlapping text */
+    bottom: -1px; /* Slightly lowered to avoid overlapping text */
     left: 50%;
     transform: translateX(-50%);
     max-width: 85%; /* Reduced size for balance */
     animation:  1.5s ease-in-out infinite alternate;
+    
   }
+  
   
   
   @keyframes flyMove {
@@ -1146,5 +1148,30 @@ h3 {
     100% {
       transform: translateY(0);
     }
+  }
+
+
+
+  
+.scroll-effect-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: var(--phthalo-green-2);
+  }
+  
+  /* Plane Container */
+  .plane-container {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease-out; /* Smooth transitions */
+  }
+  
+  .plane-image {
+    width: auto;
+    height: 300px;
   }
   
