@@ -212,20 +212,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-  
-
 const planeContainer = document.querySelector('.plane-container');
 let lastScrollTop = window.scrollY || document.documentElement.scrollTop;
 let currentPosition = 0; // Current position of the plane
 let targetPosition = 0; // Target position for smooth transition
 const speed = 0.1; // Adjust the smoothness (lower is smoother)
+let isPlaneVisible = false; // Track if the plane is visible
 
 function smoothScrollEffect() {
-  // Gradually interpolate the current position to the target position
-  currentPosition += (targetPosition - currentPosition) * speed;
+  if (isPlaneVisible) {
+    // Gradually interpolate the current position to the target position
+    currentPosition += (targetPosition - currentPosition) * speed;
 
-  // Apply the smooth movement to the plane
-  planeContainer.style.transform = `translate(calc(-50% + ${currentPosition}px), -50%)`;
+    // Apply the smooth movement to the plane
+    planeContainer.style.transform = `translate(calc(-50% + ${currentPosition}px), -50%)`;
+  }
 
   // Continue the animation
   requestAnimationFrame(smoothScrollEffect);
@@ -233,18 +234,32 @@ function smoothScrollEffect() {
 
 // Update the target position based on scroll
 window.addEventListener('scroll', () => {
-  const currentScroll = window.scrollY || document.documentElement.scrollTop;
-  const direction = currentScroll > lastScrollTop ? 1 : -1; // Down (-1) or up (+1)
+  if (isPlaneVisible) {
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    const direction = currentScroll > lastScrollTop ? 1 : -1; // Down (-1) or up (+1)
 
-  // Update the target position gradually
-  targetPosition += direction * 10; // Adjust 10 for sensitivity
+    // Update the target position gradually
+    targetPosition += direction * 10; // Adjust 10 for sensitivity
 
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
+  }
 });
+
+// Observe when the plane container becomes visible
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      isPlaneVisible = entry.isIntersecting; // Update visibility status
+    });
+  },
+  { threshold: 0.1 } // Trigger when 10% of the plane is visible
+);
+
+// Attach the observer to the plane container
+observer.observe(planeContainer);
 
 // Start the smooth scroll animation
 smoothScrollEffect();
-
 
 
 
