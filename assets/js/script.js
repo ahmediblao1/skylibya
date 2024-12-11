@@ -157,26 +157,29 @@ document.addEventListener("click", (event) => {
 // });
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent form from reloading the page
 
-    sendEmail();
-  });
-});
+///// email handle ///////
 
-function sendEmail() {
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const phone = document.getElementById('phone').value;
-  const message = document.getElementById('message').value;
+// document.addEventListener('DOMContentLoaded', function () {
+//   document.getElementById('contactForm').addEventListener('submit', function (event) {
+//     event.preventDefault(); // Prevent form from reloading the page
 
-  const subject = 'New Inquiry';
-  const body = `Hello,%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
+//     sendEmail();
+//   });
+// });
 
-  const mailtoLink = `mailto:info@skylibya.net?subject=${encodeURIComponent(subject)}&body=${body}`;
-  window.location.href = mailtoLink;
-}
+// function sendEmail() {
+//   const name = document.getElementById('name').value;
+//   const email = document.getElementById('email').value;
+//   const phone = document.getElementById('phone').value;
+//   const message = document.getElementById('message').value;
+
+//   const subject = 'New Inquiry';
+//   const body = `Hello,%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
+
+//   const mailtoLink = `mailto:info@skylibya.net?subject=${encodeURIComponent(subject)}&body=${body}`;
+//   window.location.href = mailtoLink;
+// }
 
 
 
@@ -341,3 +344,42 @@ new StickyNavigation();
 
 
 
+
+
+// Get the form element
+const form = document.getElementById("contactForm");
+
+// Add an event listener for the form submission
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent the default form submission
+
+  const formData = new FormData(form); // Collect the form data
+  const data = {};
+
+  // Convert FormData to a plain object
+  formData.forEach((value, key) => {
+    data[key] = value;
+  });
+
+  // Submit the data using Fetch API
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((json) => {
+      if (json.success) {
+        alert("Your message has been sent successfully!");
+      } else {
+        alert("Failed to send your message. Please try again.");
+      }
+    })
+    .catch((error) => {
+      console.error("An error occurred!", error);
+      alert("An error occurred. Please try again.");
+    });
+
+  // Reset the form fields
+  form.reset();
+});

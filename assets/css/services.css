@@ -532,7 +532,8 @@
   }
   
   .service-card {
-    background: var(--phthalo-green-3);
+    background-color: var(--phthalo-green-3);
+    /* background-image: url('../images/sky-2.png');  */
     border-radius: 15px;
     padding: 30px;
     color: var(--white);

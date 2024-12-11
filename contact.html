@@ -148,31 +148,41 @@
   
     
             </ul>    
-            
-            <form id="contactForm">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-          </div>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+  <!-- Hidden fields for Web3Forms -->
+  <input type="hidden" name="access_key" value="5e4b66c4-b54e-480f-82fc-2478e889d241" />
+  <input type="hidden" name="subject" value="New Inquiry from Sky Libya" />
+  <input type="checkbox" name="botcheck" id="botcheck" style="display: none;" />
+
+  <!-- Name -->
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required />
+  </div>
+
+  <!-- Email and Phone -->
+  <div class="form-row">
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" placeholder="Your Phone Number" />
+    </div>
+  </div>
+
+  <!-- Message -->
+  <div class="form-group">
+    <label for="message">Inquiry Details:</label>
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit" class="btn-primary-c">Submit Message</button>
   
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email Address:</label>
-              <input type="email" id="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number:</label>
-              <input type="text" id="phone" name="phone" placeholder="Your Phone Number">
-            </div>
-          </div>
-  
-          <div class="form-group">
-            <label for="message">Inquiry Details:</label>
-            <textarea id="message" name="message" placeholder="Your Message"></textarea>
-          </div>
-  
-          <button type="submit" class="btn-c btn-primary-c">Submit Message</button>
-      </form>
+</form>
+
       </div>
   
       <!-- Image Section -->
@@ -216,7 +226,7 @@
         </div>
       </section>
       
-
+    </div>
 
 </article>
 </main>
