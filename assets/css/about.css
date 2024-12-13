@@ -616,29 +616,34 @@
     }
   }
   
-  
-.abs-img {
+  .abs-img {
     position: absolute;
-    bottom: -1px; /* Slightly lowered to avoid overlapping text */
+    bottom: -1px;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 85%; /* Reduced size for balance */
-    animation: flyMove 1.5s ease-in-out infinite alternate;
-    
-    
-  }
+    max-width: 85%;
+    animation: spiralIn 1.5s ease-out, flyMove 1.5s ease-in-out infinite alternate 1.5s;
+}
 
-  
-  
-  
-  @keyframes flyMove {
+@keyframes spiralIn {
     0% {
-      transform: translate(-50%, 0);
+        transform: translate(-50%, -150vh) rotate(360deg) scale(0.5);
+        opacity: 0;
     }
     100% {
-      transform: translate(-50%, -15px);
+        transform: translate(-50%, 0) rotate(0deg) scale(1);
+        opacity: 1;
     }
-  }
+}
+
+@keyframes flyMove {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(-50%, -15px);
+    }
+}
 
   
   
