@@ -644,6 +644,8 @@ align-items: center;
 height: 100vh;
 position: relative;
 background: var(--vegas-gold);
+    background-repeat: no-repeat;
+    background-position: center 85%;
     text-align: center;
     padding: 0 2em;
 h1 {
