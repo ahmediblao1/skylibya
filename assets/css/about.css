@@ -616,23 +616,22 @@
     }
   }
   
+  
   .abs-img {
     position: absolute;
-    bottom: -1px;
+    bottom: -1px; /* Slightly lowered to avoid overlapping text */
     left: 50%;
     transform: translateX(-50%);
-    max-width: 85%;
-    animation: spiralIn 1.5s ease-out, flyMove 1.5s ease-in-out infinite alternate 1.5s;
+    max-width: 85%; /* Reduced size for balance */
+    animation: appearFromTop 1.5s ease-in-out, flyMove 2.5s ease-in-out infinite alternate 2s;
 }
 
-@keyframes spiralIn {
+@keyframes appearFromTop {
     0% {
-        transform: translate(-50%, -150vh) rotate(360deg) scale(0.5);
-        opacity: 0;
+        transform: translate(-50%, -100vh); /* Start from above the viewport */
     }
     100% {
-        transform: translate(-50%, 0) rotate(0deg) scale(1);
-        opacity: 1;
+        transform: translate(-50%, 0); /* Settle in its starting position */
     }
 }
 

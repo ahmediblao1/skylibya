@@ -383,3 +383,28 @@ form.addEventListener("submit", function (e) {
   // Reset the form fields
   form.reset();
 });
+
+
+
+
+
+
+// loader function
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const splash = document.getElementById("splash");
+  if (!sessionStorage.getItem("visited")) {
+      // Show loader on the first visit
+      splash.style.display = "block";
+      setTimeout(() => {
+          splash.style.display = "none";
+          sessionStorage.setItem("visited", "true");
+      }, 3000); // Loader duration in milliseconds
+  } else {
+      splash.style.display = "none";
+  }
+});
