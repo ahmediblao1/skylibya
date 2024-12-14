@@ -1,13 +1,12 @@
-Fly - Luxury Jet Flights
-This is a private flight html template made by codewithsadee
+sky libya - Luxury Jet Flights
 
 
 
 #---------- HEADER ----------#
 
-alt = fly logo
+alt = Sky Libya logo
 
-alt - fly logo
+alt - Sky Libya logo
 
 aria-label = close menu
 <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -32,7 +31,7 @@ aria-label = menu
 
 #---------- HERO ----------#
 
-Save time and fly with comfort
+Save time and Sky Libya with comfort
 
 Luxury Jet Flights
 
@@ -187,7 +186,6 @@ fly@info.com
 <ion-icon name="location" aria-hidden="ture"></ion-icon>
 30 broklyn golden street. New York
 
-Copyright 2022 by codewithsadee.
 
 <ion-icon name="logo-twitter"></ion-icon>
 <ion-icon name="logo-facebook"></ion-icon>
