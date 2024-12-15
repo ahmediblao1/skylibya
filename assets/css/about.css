@@ -433,6 +433,12 @@
   }
   
 
+  
+
+
+
+  
+
   /*-----------------------------------*\
     #contact 
     \*-----------------------------------*/
@@ -862,6 +868,13 @@ h3 {
   
     .about .container { max-width: 600px; }
   
+    .about-us{
+      background-repeat: no-repeat;
+  background-position: bottom;
+  padding-inline: 15px;
+    }
+
+    
   
   
     /**
@@ -1337,7 +1350,11 @@ h3 {
     background-color: var(--vegas-gold);
     padding: 80px 20px;
     color: var(--phthalo-green-2);
+  background-position: bottom;
+  padding-inline: 15px;
   }
+
+ 
   
   .trust-header {
     text-align: center;

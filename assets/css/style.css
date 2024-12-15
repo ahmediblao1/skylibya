@@ -20,7 +20,7 @@
 
   --british-racing-green: hsl(144, 45%, 19%);
   --phthalo-green-1: hsl(143, 54%, 9%);
-  --phthalo-green-2: hsl(144, 51%, 15%);
+  --phthalo-green-2: hsl(143, 51%, 15%);
   --phthalo-green-3: hsl(144, 54%, 11%);
   --phthalo-green_30: hsla(144, 51%, 15%, 0.3);
   --morning-blue: hsl(143, 11%, 58%);
@@ -1405,6 +1405,9 @@ body.active { overflow: hidden; }
     height: 400px;
     overflow: hidden;
     background: var(--phthalo-green-2);
+    background-repeat: no-repeat;
+  background-position: bottom;
+  padding-inline: 15px;
   }
   
   /* Plane Container */
@@ -2005,7 +2008,7 @@ body.active { overflow: hidden; }
 
   
 #splash {
-  background: var(--shadow);
+  background:var(--vegas-gold);
   /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%), url(/assets/images/sky-3.png); */
   background-repeat: no-repeat;
   position: fixed;
@@ -2084,6 +2087,9 @@ body.active { overflow: hidden; }
     transform: translate(0%,-100%);
   }
 }
+
+
+
 
 
 

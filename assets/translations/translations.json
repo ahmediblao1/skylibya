@@ -1,0 +1,33 @@
+{
+    "en": {
+      "pageTitle": "About Us - Sky Libya",
+      "home": "Home",
+      "services": "Services",
+      "aboutUs": "About Us",
+      "contact": "Contact",
+      "charterFlights": "Charter Flights",
+      "cargoTransport": "Cargo Transport",
+      "aircraftMaintenance": "Aircraft Maintenance",
+      "offshoreSupport": "Offshore Support",
+      "airAmbulance": "Air Ambulance",
+      "heroTitle": "About Sky Libya",
+      "heroSubtitle": "Redefining Aviation Excellence",
+      "footerText": "Copyright 2024 by Sky Libya."
+    },
+    "ar": {
+      "pageTitle": "من نحن - سكاي ليبيا",
+      "home": "الرئيسية",
+      "services": "الخدمات",
+      "aboutUs": "من نحن",
+      "contact": "اتصل بنا",
+      "charterFlights": "رحلات خاصة",
+      "cargoTransport": "نقل البضائع",
+      "aircraftMaintenance": "صيانة الطائرات",
+      "offshoreSupport": "الدعم البحري",
+      "airAmbulance": "الإسعاف الجوي",
+      "heroTitle": "عن سكاي ليبيا",
+      "heroSubtitle": "إعادة تعريف التميز في الطيران",
+      "footerText": "حقوق الطبع والنشر 2024 بواسطة سكاي ليبيا."
+    }
+  }
+  

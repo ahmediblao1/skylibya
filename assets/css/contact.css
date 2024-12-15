@@ -276,9 +276,16 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 4;
+    z-index: 10;
+    height: 120px;
     border-block-end: 1px solid var(--white_10);
+    background-color: var(--phthalo-green-3); /* Match header color */
+
   }
+
+  
+
+  
   
   .header.active {
     position: fixed;
@@ -441,12 +448,16 @@
   #HERO
 \*-----------------------------------*/
 .hero {
-    position: relative;
-    background-color: var(--phthalo-green-3);
-    text-align: left;
-    padding-block: 200px 250px; /* Adjusted for consistent spacing */
-    z-index: 1;
-  }
+  position: relative;
+  background-color: var(--phthalo-green-3);
+  text-align: left;
+  padding-block: 200px 250px; /* Adjusted for consistent spacing */
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-inline: 15px;
+}
+
   
   .hero::after {
     content: "";
@@ -503,6 +514,8 @@
         gap: 20px;
         padding: 40px 20px;
         background-color: var(--vegas-gold);
+  background-position: bottom;
+  padding-inline: 15px;
       }
       
       
@@ -521,6 +534,13 @@
         background-color: var(--phthalo-green-1);
         border-radius: 8px;
         box-shadow: var(--shadow);
+      }
+
+      @media (max-width: 768px) {
+        .form-section {
+          background-repeat: no-repeat;
+          background-position:center;
+        }
       }
       
       .contact-title {
@@ -832,6 +852,14 @@ textarea {
     height: 400px;
     overflow: hidden;
     background: var(--phthalo-green-3);
+    
+  }
+
+  @media (max-width: 768px) {
+    .scroll-effect-section {
+      background-repeat: repeat;
+      background-position:center;
+    }
   }
   
   /* Plane Container */
