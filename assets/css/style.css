@@ -385,6 +385,7 @@ body.active { overflow: hidden; }
   top: calc(100% + 5px); /* Place dropdown below the parent */
   left: 50%;
   transform: translateX(-50%); /* Center align */
+  background-image: url('../images/bg-h\ \(1\).png');
   background-color: var(--vegas-gold); /* Background color */
   padding: 10px 15px;
   border-radius: 5px;
