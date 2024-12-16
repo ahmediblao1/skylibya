@@ -542,7 +542,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    margin-top: 40px;
     animation: fadeInUp 1s ease-in-out 0.4s;
   }
   
