@@ -429,6 +429,7 @@
   
     .navbar-item .dropdown-menu.active {
       display: block; /* Show dropdown on mobile */
+      
     }
   }
   
@@ -1060,7 +1061,12 @@ h3 {
   
     .navbar-link:is(:hover, :focus) { color: var(--satin-sheen-gold); }
   
-  
+  /* Default hover effect for larger screens */
+.navbar-link:is(:hover, :focus) { 
+  color: var(--satin-sheen-gold); 
+}
+
+
   
    
     /**
