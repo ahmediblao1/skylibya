@@ -621,7 +621,7 @@
   }
 
   .service-card {
-    padding: 15px;
+    padding: 30px;
   }
 
   .service-icon {
@@ -649,7 +649,7 @@
   }
 
   .service-card {
-    padding: 1rpx;
+    padding: 30px;
   }
 
   .service-icon {
@@ -665,6 +665,7 @@
     line-height: 1.4; /* Ensure readability on very small screens */
    }
 }
+
 
 
   
