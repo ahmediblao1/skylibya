@@ -83,7 +83,20 @@
     "phoneLink": "+218 910 215 599",
     "whatsappLink": "+218 910 215 588",
     "address": "MJI Airport, Tripoli, Libya",
-    "copyright": "Copyright 2024 by Sky Libya."
+    "copyright": "Copyright 2024 by Sky Libya.",
+    "navHome": "Home",
+    "navServices": "Services ▼",
+    "navCharterFlights": "Charter Flights",
+    "navCargoTransport": "Cargo Transport",
+    "navAircraftMaintenance": "Aircraft Maintenance",
+    "navAircraftSpareParts": "Aircraft Spare Parts",
+    "navOffshoreSupport": "Offshore Support",
+    "navAirAmbulance": "Air Ambulance",
+    "navAboutUs": "About us",
+    "navContact": "Contact",
+    "languageDropdown": "Language ▼",
+    "languageEnglish": "English",
+    "languageArabic": "Arabic"
   },
   "ar": {
     "heroTitle": "ارتقِ بتجربتك مع مزيج من الراحة والفخامة والثقة",
@@ -160,7 +173,7 @@
     "bookFlightLink": "احجز رحلة",
     "servicesTitlefooter": "الخدمات",
     "charterFlightsLink": "الطيران الخاص",
-    "cargoTransportLink": "نقل البضائع",
+    "cargoTransportLink": "الشحن الجوي",
     "aircraftMaintenanceLink": "صيانة الطائرات",
     "offshoreSupportLink": "الدعم البحري",
     "airAmbulanceLink": "الإسعاف الجوي",
@@ -169,7 +182,20 @@
     "phoneLink": "+218 910 215 599",
     "whatsappLink": "+218 910 215 588",
     "address": "مطار معيتيقة الدولي، طرابلس، ليبيا",
-    "copyright": "حقوق النشر 2024 محفوظة لـ سكاي ليبيا."
+    "copyright": "حقوق النشر 2024 محفوظة لـ سكاي ليبيا.",
+    "navHome": "الرئيسية",
+    "navServices": "▼ الخدمات ",
+    "navCharterFlights": "الطيران الخاص",
+    "navCargoTransport": "الشحن الجوي",
+    "navAircraftMaintenance": "صيانة الطائرات",
+    "navOffshoreSupport": "الدعم البحري",
+    "navAircraftSpareParts": "قطع غيار الطائرات",
+    "navAirAmbulance": "الإسعاف الجوي",
+    "navAboutUs": "من نحن",
+    "navContact": "اتصل بنا",
+    "languageDropdown": "▼ اللغة ",
+    "languageEnglish": "الإنجليزية",
+    "languageArabic": "العربية"
   }
 }
 
