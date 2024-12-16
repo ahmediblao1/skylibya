@@ -105,7 +105,6 @@ document.addEventListener("click", (event) => {
     });
   }  
 });
-
 // Function to change the website's language
 async function changeLanguage(lang) {
   try {
@@ -124,7 +123,7 @@ async function changeLanguage(lang) {
     // Update HTML "lang" attribute for accessibility
     document.documentElement.lang = lang;
 
-    // Set direction (RTL for Arabic) only for main content
+    // Set direction (RTL for Arabic) only for main content, not the header
     const mainContent = document.querySelector("main");
     if (lang === "ar") {
       mainContent.setAttribute("dir", "rtl");
@@ -132,39 +131,29 @@ async function changeLanguage(lang) {
       mainContent.setAttribute("dir", "ltr");
     }
 
-    // Save selected language to localStorage
-    localStorage.setItem("selectedLanguage", lang);
-
-    // Close the dropdown menu
-    const dropdownMenu = document.querySelector(".language-switcher .dropdown-menu");
-    dropdownMenu.classList.remove("active");
+    // Save the selected language to localStorage
+    localStorage.setItem("preferredLanguage", lang);
   } catch (error) {
     console.error("Error loading translations:", error);
   }
 }
 
-// Add event listeners to dropdown toggler
-document.querySelectorAll("[data-dropdown-toggler]").forEach((toggler) => {
-  toggler.addEventListener("click", (event) => {
-    event.preventDefault();
-    const dropdownMenu = toggler.nextElementSibling;
-    dropdownMenu.classList.toggle("active");
-  });
-});
-
 // Add event listeners to language buttons
-document.querySelectorAll(".dropdown-item a").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent default behavior
-    const selectedLang = event.target.textContent.trim() === "English" ? "en" : "ar";
+document.querySelectorAll(".dropdown-item button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const selectedLang = button.textContent.trim() === "English" ? "en" : "ar";
     changeLanguage(selectedLang);
+
+    // Close the dropdown menu after selecting
+    const dropdownMenu = button.closest(".dropdown-menu");
+    dropdownMenu.style.display = "none";
   });
 });
 
 // Load saved language on page load
 document.addEventListener("DOMContentLoaded", () => {
-  const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
-  changeLanguage(savedLanguage);
+  const savedLang = localStorage.getItem("preferredLanguage") || "en"; // Default to English
+  changeLanguage(savedLang);
 });
 
 
