@@ -941,6 +941,15 @@
   background-position: center;
 }
 
+@media (max-width: 768px) {
+  .et-hero-tabs {
+    background-attachment: scroll; /* Default behavior for mobile */
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
 
 
 /*-----------------------------------*\
