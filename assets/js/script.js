@@ -123,14 +123,12 @@ async function changeLanguage(lang) {
     // Update HTML "lang" attribute for accessibility
     document.documentElement.lang = lang;
 
-    // Set direction (RTL for Arabic) only for main content, not the header
-    const mainContent = document.querySelector("main");
+    // Set direction (RTL for Arabic) for the entire document
     if (lang === "ar") {
-      mainContent.setAttribute("dir", "rtl");
+      document.documentElement.setAttribute("dir", "rtl");
     } else {
-      mainContent.setAttribute("dir", "ltr");
+      document.documentElement.setAttribute("dir", "ltr");
     }
-
     // Save the selected language to localStorage
     localStorage.setItem("preferredLanguage", lang);
   } catch (error) {

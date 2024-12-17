@@ -96,11 +96,33 @@
     "navContact": "Contact",
     "languageDropdown": "Language ▼",
     "languageEnglish": "English",
-    "languageArabic": "Arabic"
+    "languageArabic": "Arabic",
+    "servicesheroTitlepageTitle": "Our Services - Sky Libya | Tailored Aviation Solutions",
+    "servicesheroTitlepageDescription": "Explore the range of personalized aviation solutions offered by Sky Libya. From charter flights to cargo transport, we deliver exceptional services with precision and reliability.",
+    "servicesheroTitle": "Our Exceptional Services",
+    "servicesheroSubtitle": "Tailored aviation solutions for your needs",
+    "bookFlightButton": "Book a Flight",
+    "learnMoreButton": "Learn More",
+    "servicesSectionTitle": "Our Services",
+    "servicesSectionSubtitle": "At Sky Libya, we provide reliable, high-quality aviation solutions tailored to your needs.",
+    "serviceCharterFlightsTitle": "Charter Flights",
+    "serviceCharterFlightsDescription": "Enjoy exclusive and personalized charter flight services for business or leisure. Travel on your schedule with the luxury and comfort you deserve. Whether you're attending a crucial business meeting or enjoying a family vacation, our charter flights ensure a seamless and enjoyable journey.",
+    "serviceCargoTransportTitle": "Cargo Transport",
+    "serviceCargoTransportDescription": "Secure and efficient transportation solutions for your cargo, no matter the size. From small parcels to heavy goods, our experienced team ensures timely and safe delivery to your destination. We offer tailored cargo solutions, including perishable goods and specialized handling.",
+    "serviceAircraftMaintenanceTitle": "Aircraft Maintenance",
+    "serviceAircraftMaintenanceDescription": "World-class maintenance services to keep your aircraft in peak condition. Our certified engineers and technicians provide comprehensive checks, repairs, and upgrades to ensure optimal performance, safety, and compliance with aviation standards.",
+    "serviceOffshoreSupportTitle": "Offshore Support",
+    "serviceOffshoreSupportDescription": "Comprehensive offshore aviation support for your operations. From crew transfers to logistics and emergency response, we cater to offshore industries such as oil and gas. Our services prioritize safety, efficiency, and reliability in challenging environments.",
+    "serviceAirAmbulanceTitle": "Air Ambulance",
+    "serviceAirAmbulanceDescription": "Rapid, reliable, and medically equipped flights for emergency medical situations. Our air ambulance service is staffed with trained medical professionals and advanced equipment to provide life-saving care during transit. Available 24/7 for patient transport and critical care.",
+    "serviceGlobalReachTitle": "Global Reach",
+    "serviceGlobalReachDescription": "Operating across international destinations with ease. Our extensive network and logistics expertise ensure smooth and efficient services, whether you're traveling or shipping across borders."
+
+    
   },
   "ar": {
-    "heroTitle": "ارتقِ بتجربتك مع مزيج من الراحة والفخامة والثقة",
-    "heroSubtitle": "اختبر مستوى جديدًا من السفر مع خدماتنا الفريدة، وحلول الشحن المتطورة، وأرقى معايير الطيران العالمية.",
+    "servicesheroTitle": "ارتقِ بتجربتك مع مزيج من الراحة والفخامة والثقة",
+    "servicesheroSubtitle": "اختبر مستوى جديدًا من السفر مع خدماتنا الفريدة، وحلول الشحن المتطورة، وأرقى معايير الطيران العالمية.",
     "bookFlightButton": "احجز رحلتك الآن",
     "learnMoreButton": "تعرّف على خدماتنا",
     "servicesTitle": "خدماتنا",
@@ -195,7 +217,28 @@
     "navContact": "اتصل بنا",
     "languageDropdown": "▼ اللغة ",
     "languageEnglish": "الإنجليزية",
-    "languageArabic": "العربية"
+    "languageArabic": "العربية",
+    "pageTitle": "خدماتنا - سكاي ليبيا | حلول طيران مخصصة",
+    "pageDescription": "اكتشف مجموعة من حلول الطيران المخصصة التي تقدمها سكاي ليبيا. من الرحلات الخاصة إلى نقل البضائع، نقدم خدمات استثنائية بدقة وموثوقية.",
+    "heroTitle": "خدماتنا الاستثنائية",
+    "heroSubtitle": "حلول طيران مصممة لتلبية احتياجاتك",
+    "bookFlightButton": "احجز رحلة",
+    "learnMoreButton": "اكتشف المزيد",
+    "servicesSectionTitle": "خدماتنا",
+    "servicesSectionSubtitle": "في سكاي ليبيا، نقدم حلول طيران موثوقة وعالية الجودة مصممة خصيصًا لتلبية احتياجاتك.",
+    "serviceCharterFlightsTitle": "الطيران الخاص",
+    "serviceCharterFlightsDescription": "استمتع بخدمات رحلات مستأجرة حصرية وشخصية للعمل أو الترفيه. سافر حسب جدولك مع الرفاهية والراحة التي تستحقها. سواء كنت تحضر اجتماع عمل مهمًا أو تستمتع بعطلة عائلية، تضمن رحلاتنا المستأجرة تجربة سلسة وممتعة.",
+    "serviceCargoTransportTitle": "نقل البضائع",
+    "serviceCargoTransportDescription": "حلول نقل آمنة وفعالة لبضائعك مهما كان حجمها. من الطرود الصغيرة إلى البضائع الثقيلة، يضمن فريقنا المتمرس التسليم في الوقت المناسب وبأمان إلى وجهتك. نقدم حلول شحن مخصصة تشمل البضائع القابلة للتلف والتعامل الخاص.",
+    "serviceAircraftMaintenanceTitle": "صيانة الطائرات",
+    "serviceAircraftMaintenanceDescription": "خدمات صيانة عالمية للحفاظ على طائرتك في أفضل حالاتها. يقدم مهندسونا وفنيونا المعتمدون فحوصات شاملة وإصلاحات وترقيات لضمان الأداء الأمثل والسلامة والامتثال لمعايير الطيران.",
+    "serviceOffshoreSupportTitle": "الدعم البحري",
+    "serviceOffshoreSupportDescription": "دعم شامل للطيران البحري لعملياتك. من نقل الطاقم إلى الخدمات اللوجستية والاستجابة للطوارئ، نقدم خدمات للصناعات البحرية مثل النفط والغاز. تتميز خدماتنا بالسلامة والكفاءة والموثوقية في بيئات صعبة.",
+    "serviceAirAmbulanceTitle": "الإسعاف الجوي",
+    "serviceAirAmbulanceDescription": "رحلات سريعة وموثوقة ومجهزة طبيًا للحالات الطبية الطارئة. تتميز خدمة الإسعاف الجوي لدينا بفريق طبي مدرب ومعدات متطورة لتقديم الرعاية المنقذة للحياة أثناء النقل. متوفرة على مدار الساعة لنقل المرضى والرعاية الحرجة.",
+    "serviceGlobalReachTitle": "الانتشار العالمي",
+    "serviceGlobalReachDescription": "تشغيل عبر وجهات دولية بكل سهولة. تضمن شبكتنا الواسعة وخبرتنا اللوجستية خدمات سلسة وفعالة سواء كنت تسافر أو تشحن عبر الحدود."
   }
-}
+    
+  }
 

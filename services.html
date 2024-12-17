@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <!-- Primary Meta Tags -->
-    <title>Our Services - Sky Libya | Tailored Aviation Solutions</title>
+    <title data-translate="servicesheroTitlepageTitle">Our Services - Sky Libya | Tailored Aviation Solutions</title>
     <meta name="title" content="Our Services - Sky Libya | Tailored Aviation Solutions">
-    <meta name="description" content="Explore the range of personalized aviation solutions offered by Sky Libya. From charter flights to cargo transport, we deliver exceptional services with precision and reliability.">
+    <meta name="description" data-translate="servicesheroTitlepageDescription" content="Explore the range of personalized aviation solutions offered by Sky Libya. From charter flights to cargo transport, we deliver exceptional services with precision and reliability.">
   
     <!-- Favicon -->
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
@@ -75,56 +75,61 @@
   
 <body id="top">
   <body>
+ 
     
+
   <header class="header" data-header>
     <div class="container">
   
+      <!-- Logo -->
       <a href="/" class="logo">
         <img src="./assets/images/skylibya-logo.svg" width="150" height="48" alt="Sky Libya Logo">
       </a>
   
+      <!-- Navbar -->
       <nav class="navbar" data-navbar>
-  
         <div class="navbar-top">
           <a href="/" class="logo">
             <img src="./assets/images/skylibya-logo.svg" width="150" height="48" alt="Sky Libya Logo">
           </a>
-  
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
         </div>
   
         <ul class="navbar-list">
-  
-          <li class="navbar-item">
-            <a href="/" class="navbar-link" data-nav-link>Home</a>
-          </li>
-  
+          <li class="navbar-item"><a href="#home" class="navbar-link" data-nav-link data-translate="navHome">Home</a></li>
           <li class="navbar-item dropdown">
-            <a href="/services.html" class="navbar-link" data-dropdown-toggler>Services</a>
+            <a href="/services.html" class="navbar-link" data-dropdown-toggler data-translate="navServices">Services ▼</a>
             <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="/services.html">Charter Flights</a></li>
-              <li class="dropdown-item"><a href="/services.html">Cargo Transport</a></li>
-              <li class="dropdown-item"><a href="/services.html">Aircraft Maintenance</a></li>
-              <li class="dropdown-item"><a href="/services.html">Offshore Support</a></li>
-              <li class="dropdown-item"><a href="/services.html">Air Ambulance</a></li>
+              <li class="dropdown-item"><a href="/services.html" data-translate="navCharterFlights">Charter Flights</a></li>
+              <li class="dropdown-item"><a href="/services.html" data-translate="navCargoTransport">Cargo Transport</a></li>
+              <li class="dropdown-item"><a href="/services.html" data-translate="navAircraftMaintenance">Aircraft Maintenance</a></li>
+              <li class="dropdown-item"><a href="/services.html" data-translate="navAircraftSpareParts">Aircraft spare parts</a></li>
+              <li class="dropdown-item"><a href="/services.html" data-translate="navOffshoreSupport">Offshore Support</a></li>
+              <li class="dropdown-item"><a href="/services.html" data-translate="navAirAmbulance">Air Ambulance</a></li>
             </ul>
           </li>
-               
-  
-          <li class="navbar-item">
-            <a href="/about.html" class="navbar-link" data-nav-link>About us</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="/contact.html" class="navbar-link" data-nav-link>Contact</a>
-          </li>
-  
+          <li class="navbar-item"><a href="/about.html" class="navbar-link" data-nav-link data-translate="navAboutUs">About us</a></li>
+          <li class="navbar-item"><a href="/contact.html" class="navbar-link" data-nav-link data-translate="navContact">Contact</a></li>
         </ul>
-  
       </nav>
   
+     
+       <!-- Language Switcher -->
+       <div class="language-switcher dropdown" >
+        <button class="" data-dropdown-toggler data-translate="languageDropdown">Language ▼</button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">
+            <button type="button" onclick="changeLanguage('en')">English</button>
+          </li>
+          <li class="dropdown-item">
+            <button type="button" onclick="changeLanguage('ar')">العربية</button>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Mobile Menu Button -->
       <div class="header-action">
         <button class="header-action-btn nav-open-btn" aria-label="menu" data-nav-toggler>
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -132,17 +137,18 @@
       </div>
   
       <div class="overlay" data-nav-toggler data-overlay></div>
-  
     </div>
   </header>
+  
+
 
 
   <main>
     <article>
   <!-- Hero -->
   <section class="et-hero-tabs" style="background-image: url('./assets/images/offer-bg.png')" >
-    <h2 class="section-title">Our Exceptional Services</h2>
-      <p class="section-subtitle">Tailored aviation solutions for your needs</p>
+    <h2 class="section-title" data-translate="servicesheroTitle">Our Exceptional Services</h2>
+      <p class="section-subtitle" data-translate="servicesheroSubtitle">Tailored aviation solutions for your needs</p>
 
       
           <div class="btn-wrapper">
@@ -180,51 +186,51 @@
     
   <section class="services-section" style="background-image: url('./assets/images/offer-bg.png')" >
     <div class="container">
-      <h2 class="section-title-1">Our Services</h2>
-      <p class="section-subtitle">
+      <h2 class="section-title-1" data-translate="servicesSectionTitle">Our Services</h2>
+      <p class="section-subtitle" data-translate="servicesSectionSubtitle">
         At Sky Libya, we provide reliable, high-quality aviation solutions tailored to your needs.
       </p>
   
       <div class="services-grid">
         <div class="service-card">
           <ion-icon class="service-icon" name="airplane-outline"></ion-icon>
-          <h3 class="service-title">Charter Flights</h3>
-          <p class="service-description">
+          <h3 class="service-title" data-translate="serviceCharterFlightsTitle">Charter Flights</h3>
+          <p class="service-description" data-translate="serviceCharterFlightsDescription">
             Enjoy exclusive and personalized charter flight services for business or leisure. Travel on your schedule with the luxury and comfort you deserve. Whether you're attending a crucial business meeting or enjoying a family vacation, our charter flights ensure a seamless and enjoyable journey.
           </p>
         </div>
         <div class="service-card">
           <ion-icon class="service-icon" name="cube-outline"></ion-icon>
-          <h3 class="service-title">Cargo Transport</h3>
-          <p class="service-description">
+          <h3 class="service-title" data-translate="serviceCargoTransportTitle">Cargo Transport</h3>
+          <p class="service-description" data-translate="serviceCargoTransportDescription">
             Secure and efficient transportation solutions for your cargo, no matter the size. From small parcels to heavy goods, our experienced team ensures timely and safe delivery to your destination. We offer tailored cargo solutions, including perishable goods and specialized handling.
           </p>
         </div>
         <div class="service-card">
           <ion-icon class="service-icon" name="build-outline"></ion-icon>
-          <h3 class="service-title">Aircraft Maintenance</h3>
-          <p class="service-description">
+          <h3 class="service-title" data-translate="serviceAircraftMaintenanceTitle">Aircraft Maintenance</h3>
+          <p class="service-description" data-translate="serviceAircraftMaintenanceDescription">
             World-class maintenance services to keep your aircraft in peak condition. Our certified engineers and technicians provide comprehensive checks, repairs, and upgrades to ensure optimal performance, safety, and compliance with aviation standards.
           </p>
         </div>
         <div class="service-card">
           <ion-icon class="service-icon" name="locate-outline"></ion-icon>
-          <h3 class="service-title">Offshore Support</h3>
-          <p class="service-description">
+          <h3 class="service-title" data-translate="serviceOffshoreSupportTitle">Offshore Support</h3>
+          <p class="service-description" data-translate="serviceOffshoreSupportDescription">
             Comprehensive offshore aviation support for your operations. From crew transfers to logistics and emergency response, we cater to offshore industries such as oil and gas. Our services prioritize safety, efficiency, and reliability in challenging environments.
           </p>
         </div>
         <div class="service-card">
           <ion-icon class="service-icon" name="medical-outline"></ion-icon>
-          <h3 class="service-title">Air Ambulance</h3>
-          <p class="service-description">
+          <h3 class="service-title" data-translate="serviceAirAmbulanceTitle">Air Ambulance</h3>
+          <p class="service-description" data-translate="serviceAirAmbulanceDescription">
             Rapid, reliable, and medically equipped flights for emergency medical situations. Our air ambulance service is staffed with trained medical professionals and advanced equipment to provide life-saving care during transit. Available 24/7 for patient transport and critical care.
           </p>
         </div>
         <div class="service-card">
           <ion-icon class="service-icon" name="earth-outline"></ion-icon>
-          <h3 class="service-title">Global Reach </h3>
-          <p class="service-description">
+          <h3 class="service-title" data-translate="serviceGlobalReachTitle">Global Reach </h3>
+          <p class="service-description" data-translate="serviceGlobalReachDescription">
             Operating across international destinations with ease. Our extensive network and logistics expertise ensure smooth and efficient services, whether you're traveling or shipping across borders.
           </p>
         </div>
@@ -240,6 +246,7 @@
 
 
  
+
   <!-- 
     - #FOOTER
   -->
@@ -252,10 +259,10 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./assets/images/skylibya-logo.svg" width="200" height="200" alt="fly logo">
+            <img src="./assets/images/skylibya-logo.svg" width="200" height="200" alt="Sky Libya logo">
           </a>
 
-          <p class="footer-text">
+          <p class="footer-text" data-translate="footerText">
             sky libya Aviation save your time and give you comfort.
           </p>
 
@@ -264,27 +271,27 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Explore</p>
+            <p class="footer-list-title" data-translate="exploreTitle">Explore</p>
           </li>
 
           <li>
-            <a href="/about.html" class="footer-link">About</a>
+            <a href="/about.html" class="footer-link" data-translate="aboutLink">About</a>
           </li>
 
           <li>
-            <a href="/contact.html" class="footer-link">Contact</a>
+            <a href="/contact.html" class="footer-link" data-translate="contactLink">Contact</a>
           </li>
 
           <li>
-            <a href="/contact.html" class="footer-link">Destinations</a>
+            <a href="/contact.html" class="footer-link" data-translate="destinationsLink">Destinations</a>
           </li>
 
           <li>
-            <a href="/contact.html" class="footer-link">Flight Planning</a>
+            <a href="/contact.html" class="footer-link" data-translate="flightPlanningLink">Flight Planning</a>
           </li>
 
           <li>
-            <a href="/contact.html" class="footer-link">Book Flight</a>
+            <a href="/contact.html" class="footer-link" data-translate="bookFlightLink">Book Flight</a>
           </li>
 
         </ul>
@@ -292,27 +299,27 @@
         <ul class="footer-list">  
 
           <li>
-            <p class="footer-list-title">Services</p>
+            <p class="footer-list-title" data-translate="servicesTitlefooter">Services</p>
           </li>
 
           <li>
-            <a href="/services.html" class="footer-link">Charter Flights</a>
+            <a href="/services.html" class="footer-link" data-translate="charterFlightsLink">Charter Flights</a>
           </li>
 
           <li>
-            <a href="/services.html" class="footer-link">Cargo Transport</a>
+            <a href="/services.html" class="footer-link" data-translate="cargoTransportLink">Cargo Transport</a>
           </li>
 
           <li>
-            <a href="/services.html" class="footer-link">Aircraft Maintenance</a>
+            <a href="/services.html" class="footer-link" data-translate="aircraftMaintenanceLink">Aircraft Maintenance</a>
           </li>
 
           <li>
-            <a href="/services.html" class="footer-link">Offshore Support</a>
+            <a href="/services.html" class="footer-link" data-translate="offshoreSupportLink">Offshore Support</a>
           </li>
 
           <li>
-            <a href="/services.html" class="footer-link">Air Ambulance</a>
+            <a href="/services.html" class="footer-link" data-translate="airAmbulanceLink">Air Ambulance</a>
           </li>
 
         </ul>
@@ -320,27 +327,27 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Contact</p>
+            <p class="footer-list-title" data-translate="contactTitle">Contact</p>
           </li>
 
           <li class="footer-list-item">
             <ion-icon name="mail" aria-hidden="true"></ion-icon>
-            <a href="mailto:info@skylibya.net" class="footer-link">info@skylibya.net</a>
+            <a href="mailto:info@skylibya.net" class="footer-link" data-translate="emailLink">info@skylibya.net</a>
           </li>
 
           <li class="footer-list-item">
             <ion-icon name="call" aria-hidden="true"></ion-icon>
-            <a href="tel:+218910215599" class="footer-link">+218 910 215 599</a>
+            <a href="tel:+218910215599" class="footer-link" data-translate="phoneLink">+218 910 215 599</a>
           </li>
         
           <li class="footer-list-item">
             <ion-icon name="logo-whatsapp"></ion-icon>
-            <a href="https://wa.me/218910215588" class="footer-link" target="_blank">+218 910 215 588</a>
+            <a href="https://wa.me/218910215588" class="footer-link" target="_blank" data-translate="whatsappLink">+218 910 215 588</a>
           </li>
         
           <li class="footer-list-item">
             <ion-icon name="location" aria-hidden="true"></ion-icon>
-            <address class="address">
+            <address class="address" data-translate="address">
               MJI Airport, Tripoli, Libya
             </address>
           </li>
@@ -352,7 +359,7 @@
 
       <div class="footer-bottom">
 
-        <p class="copyright">
+        <p class="copyright" data-translate="copyright">
           Copyright 2024 by Sky Libya.
         </p>
 

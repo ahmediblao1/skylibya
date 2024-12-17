@@ -306,7 +306,7 @@
   
   .header-action-btn ion-icon { --ionicon-stroke-width: 40px; }
   
-  .nav-open-btn { color: var(--satin-sheen-gold); }
+  .nav-open-btn { color: var(--phthalo-green-2); }
   
   .navbar {
     position: fixed;
@@ -381,8 +381,8 @@
     top: calc(100% + 5px); /* Place dropdown below the parent */
     left: 50%;
     transform: translateX(-50%); /* Center align */
-    background-color: var(--vegas-gold);
-    padding: 10px 15px;
+    background-color: var(--phthalo-green-1);
+    padding: 10px 40px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     list-style: none;
@@ -396,15 +396,35 @@
     font-size: var(--fs-8);
     padding: 5px 5px;
     display: block;
+    position: relative; /* Ensure proper positioning for pseudo-elements */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transitions */
   }
   
   .dropdown-item a:hover {
-    color: var(--phthalo-green-2); /* Highlight color */
+    color: var(--satin-sheen-gold); /* Highlight color */
+    transform: scale(1.05); /* Slightly enlarge link */
   }
+  
+  /* Underline Animation */
+  .dropdown-item a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Position the underline just below the text */
+    width: 0; /* Initial width set to 0 */
+    height: 2px;
+    background-color: var(--satin-sheen-gold);
+    transition: width 0.3s ease; /* Smooth underline animation */
+  }
+  
+  .dropdown-item a:hover::after {
+    width: 100%; /* Expand the underline to full width on hover */
+  }
+  
   
   /* Add a downward arrow to indicate dropdown */
   .navbar-item.dropdown > .navbar-link::after {
-    content: "▼";
+    content: "";
     font-size: 12px;
     margin-left: 5px;
     color: var(--white); /* Default arrow color */
@@ -433,6 +453,194 @@
     }
   }
   
+/* Language Switcher */
+.language-switcher {
+  position: relative; /* Keeps dropdown position relative */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  margin: 10px 10px; /* Spacing around the button */
+}
+
+.language-switcher button {
+  background-color: var(--phthalo-green-2); /* Button background color */
+  color: var(--white); /* Text color */
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px; /* Button padding */
+  font-size: var(--fs-8);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  --fs-8: 1.5rem;
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+}
+
+.language-switcher button {
+  background-color: var(--phthalo-green-2); /* Default Button Background */
+  color: var(--white); /* Text color */
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: var(--fs-8);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.language-switcher button:hover,
+.language-switcher button:active,
+.language-switcher button:focus {
+  background-color: var(--satin-sheen-gold); /* Gold color on hover/tap */
+  color: var(--phthalo-green-2); /* Text changes for visibility */
+  transform: scale(1.05); /* Slight scaling for visual feedback */
+}
+
+
+.btn-3:hover{
+  color: whitesmoke;
+}
+/* Dropdown Menu */
+.language-switcher .dropdown-menu {
+  position: absolute;
+  top: calc(100% + 5px); /* Dropdown appears below the button */
+  left: 50%; /* Align dropdown to the center of the parent */
+  transform: translateX(-50%); /* Center align horizontally */
+  background-color: var(--vegas-gold);
+  padding: 10px 0; /* Add vertical spacing inside */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none; /* Initially hidden */
+  z-index: 1000;
+  width: 150px; /* Fixed width for dropdown */
+}
+
+.language-switcher .dropdown-item button {
+  background: none;
+  color: var(--white);
+  border: none;
+  padding: 8px 15px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+.language-switcher .dropdown-item button:hover {
+  color: var(--phthalo-green-2); /* Ensure text remains visible */
+  border-radius: 5px; /* Add a rounded corner effect */
+}
+
+.language-switcher .dropdown-menu.active {
+  display: block; /* Show dropdown when active */
+}
+
+.language-switcher .dropdown-item {
+  text-align: center; /* Center align the text */
+}
+
+.language-switcher .dropdown-item a {
+  color: var(--white); /* Text color */
+  text-decoration: none;
+  display: block;
+  padding: 8px 15px; /* Add padding to buttons */
+  transition: background-color 0.3s ease;
+}
+
+.language-switcher .dropdown-item a:hover {
+  background-color: transparent; /* Hover background color */
+  color: var(--phthalo-green-3); /* Hover text color */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .language-switcher {
+    text-align: end; /* Center align on mobile */
+    margin: 5px 0; /* Add spacing */
+  }
+
+  .language-switcher .dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%); /* Center dropdown horizontally */
+    width: 100%; /* Full-width dropdown on mobile */
+  }
+
+  .language-switcher .dropdown-item a {
+    text-align: center; /* Ensure text is centered on mobile */
+  }
+}
+
+
+
+
+/* Base Navbar Link */
+.navbar-link {
+  position: relative;
+  display: inline-block;
+  color: var(--white);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  padding-block: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Start with no width */
+  height: 2px;
+  background-color: var(--phthalo-green-2); /* Default green */
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+  color: var(--phthalo-green-2); /* Default green text on hover */
+}
+
+.navbar-link:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .navbar-link {
+    color: var(--white); /* Default text color */
+  }
+
+  .navbar-link:hover,
+  .navbar-link:focus {
+    color: var(--satin-sheen-gold); /* Gold text color on hover */
+  }
+
+  .navbar-link::after {
+    background-color: var(--satin-sheen-gold); /* Gold underline */
+  }
+
+  .navbar-link:hover::after {
+    width: 100%;
+  }
+
+  /* Dropdown Item Link Styling */
+  .dropdown-item a {
+    color: var(--white);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .dropdown-item a:hover {
+    color: var(--satin-sheen-gold); /* Gold text on hover */
+    transform: scale(1.05);
+  }
+}
+
 
   /*-----------------------------------*\
     #contact 
@@ -1273,19 +1481,46 @@
       gap: 80px;
     }
   
-    .navbar-link {
-      --fs-8: 1.5rem;
-      text-transform: uppercase;
-      font-weight: var(--fw-700);
-      transition: var(--transition-1);
-    }
-  
-    .navbar-link:is(:hover, :focus) { color: var(--satin-sheen-gold); }
-  
-  /* Default hover effect for larger screens */
-.navbar-link:is(:hover, :focus) { 
-  color: var(--satin-sheen-gold); 
+  /* Default Navbar Link Styling */
+.navbar-link {
+  --fs-8: 1.5rem;
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
 }
+
+/* Default hover effect for larger screens */
+.navbar-link:is(:hover, :focus) { 
+  color: var(--phthalo-green-2); 
+}
+
+/* Small screens: Override color to gold */
+@media (max-width: 768px) {
+  .navbar-link {
+    font-size: var(--fs-8); /* Keep font size consistent */
+  }
+
+  .navbar-link:is(:hover, :focus) {
+    color: var(--satin-sheen-gold); /* Change to gold */
+  }
+}
+
+
+
+.navbar-link-1 {
+  --fs-8: 1.5rem;
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
+}
+
+.navbar-link-1:is(:hover, :focus) { color: var(--satin-sheen-gold); }
+
+/* Default hover effect for larger screens */
+.navbar-link-1:is(:hover, :focus) { 
+color: var(--satin-sheen-gold); 
+}
+
 
 
   
