@@ -1222,3 +1222,7 @@ textarea {
 
 
 
+  .no-rtl {
+    direction: ltr !important; /* Force LTR direction */
+    text-align: inherit !important; /* Inherit original alignment */
+  }
