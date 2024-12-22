@@ -269,174 +269,303 @@
     #HEADER
   \*-----------------------------------*/
   
-  .header-action-btn:not(.nav-open-btn) { display: none; }
-  
-  .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    height: 120px;
-    border-block-end: 1px solid var(--white_10);
-    background-color: var(--phthalo-green-3); /* Match header color */
+.header-action-btn:not(.nav-open-btn) { display: none; }
 
+
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  border-block-end: 1px solid var(--white_10);
+}
+
+.header.active {
+  position: fixed;
+  background-color: var(--phthalo-green-2);
+  border: none;
+  box-shadow: var(--shadow);
+  transform: translateY(-100%);
+  animation: slideInTop 0.5s ease forwards;
+}
+
+@keyframes slideInTop {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 30px;
+}
+
+.header-action-btn { font-size: 28px; }
+
+.header-action-btn ion-icon { --ionicon-stroke-width: 40px; }
+
+.nav-open-btn { color: var(--satin-sheen-gold); }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  max-width: 300px;
+  width: 100%;
+  background-color: var(--phthalo-green-2);
+  height: 100vh;
+  padding: 30px 15px;
+  z-index: 2;
+  transition: 0.25s var(--cubic-in);
+  visibility: hidden;
+}
+
+.navbar.active {
+  transform: translateX(300px);
+  visibility: visible;
+  transition: 0.5s var(--cubic-out);
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-block-end: 40px;
+}
+
+.nav-close-btn {
+  color: var(--white);
+  font-size: 22px;
+}
+
+.nav-close-btn ion-icon { --ionicon-stroke-width: 100px; }
+
+.navbar-list { border-block-start: 1px solid var(--white_10); }
+
+.navbar-item { border-block-end: 1px solid var(--white_10); }
+
+.navbar-link {
+  color: var(--white);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  padding-block: 15px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black_50);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-1);
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Dropdown container styling */
+.navbar-item.dropdown {
+  position: relative;
+}
+
+.navbar-item .dropdown-menu {
+  position: absolute;
+  top: calc(100% + 5px); /* Place dropdown below the parent */
+  left: 50%;
+  transform: translateX(-50%); /* Center align */
+  background-image: url('../images/bg-h\ \(1\).png');
+  background-color: var(--vegas-gold); /* Background color */
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none; /* Initially hidden */
+  z-index: 1000;
+}
+
+.dropdown-item a {
+  color: var(--white); /* Default text color */
+  text-decoration: none;
+  font-size: var(--fs-8);
+  padding: 5px 0;
+  display: block;
+}
+
+.dropdown-item a:hover {
+  color: var(--phthalo-green-2); /* Highlight color */
+}
+
+/* Add a downward arrow to indicate dropdown */
+.navbar-item.dropdown > .navbar-link::after {
+  font-size: 12px;
+  margin-left: 5px;
+  color: var(--white); /* Default arrow color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Active state for both text and arrow */
+.navbar-item.dropdown > .navbar-link.active,
+.navbar-item.dropdown > .navbar-link.active::after {
+  color: var(--satin-sheen-gold); /* Change both text and arrow color */
+}/* Language Switcher */
+.language-switcher {
+  position: relative; /* Keeps dropdown position relative */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  margin: 10px 10px; /* Spacing around the button */
+}
+
+.language-switcher button {
+  background-color: var(--vegas-gold); /* Button background color */
+  color: var(--white); /* Text color */
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px; /* Button padding */
+  font-size: var(--fs-8);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+
+.btn-3:hover{
+  color: whitesmoke;
+}
+/* Dropdown Menu */
+.language-switcher .dropdown-menu {
+  position: absolute;
+  top: calc(100% + 5px); /* Dropdown appears below the button */
+  left: 50%; /* Align dropdown to the center of the parent */
+  transform: translateX(-50%); /* Center align horizontally */
+  background-color: var(--vegas-gold);
+  padding: 10px 0; /* Add vertical spacing inside */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none; /* Initially hidden */
+  z-index: 1000;
+  width: 150px; /* Fixed width for dropdown */
+}
+
+.language-switcher .dropdown-item button {
+  background: none;
+  color: var(--white);
+  border: none;
+  padding: 8px 15px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+.language-switcher .dropdown-item button:hover {
+  color: var(--phthalo-green-2); /* Ensure text remains visible */
+  border-radius: 5px; /* Add a rounded corner effect */
+}
+
+.language-switcher .dropdown-menu.active {
+  display: block; /* Show dropdown when active */
+}
+
+.language-switcher .dropdown-item {
+  text-align: center; /* Center align the text */
+}
+
+.language-switcher .dropdown-item a {
+  color: var(--white); /* Text color */
+  text-decoration: none;
+  display: block;
+  padding: 8px 15px; /* Add padding to buttons */
+  transition: background-color 0.3s ease;
+}
+
+.language-switcher .dropdown-item a:hover {
+  background-color: transparent; /* Hover background color */
+  color: var(--phthalo-green-3); /* Hover text color */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .language-switcher {
+    text-align: end; /* Center align on mobile */
+    margin: 5px 0; /* Add spacing */
   }
 
-  
-
-  
-  
-  .header.active {
-    position: fixed;
-    background-color: var(--phthalo-green-2);
-    border: none;
-    box-shadow: var(--shadow);
-    transform: translateY(-100%);
-    animation: slideInTop 0.5s ease forwards;
-  }
-  
-  @keyframes slideInTop {
-    0% { transform: translateY(-100%); }
-    100% { transform: translateY(0); }
-  }
-  
-  .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 26px 30px;
-  }
-  
-  .header-action-btn { font-size: 28px; }
-  
-  .header-action-btn ion-icon { --ionicon-stroke-width: 40px; }
-  
-  .nav-open-btn { color: var(--satin-sheen-gold); }
-  
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: -300px;
-    max-width: 300px;
-    width: 100%;
-    background-color: var(--phthalo-green-2);
-    height: 100vh;
-    padding: 30px 15px;
-    z-index: 2;
-    transition: 0.25s var(--cubic-in);
-    visibility: hidden;
-  }
-  
-  .navbar.active {
-    transform: translateX(300px);
-    visibility: visible;
-    transition: 0.5s var(--cubic-out);
-  }
-  
-  .navbar-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-block-end: 40px;
-  }
-  
-  .nav-close-btn {
-    color: var(--white);
-    font-size: 22px;
-  }
-  
-  .nav-close-btn ion-icon { --ionicon-stroke-width: 100px; }
-  
-  .navbar-list { border-block-start: 1px solid var(--white_10); }
-  
-  .navbar-item { border-block-end: 1px solid var(--white_10); }
-  
-  .navbar-link {
-    color: var(--white);
-    font-size: var(--fs-8);
-    font-weight: var(--fw-500);
-    padding-block: 15px;
-  }
-  
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--black_50);
-    z-index: 1;
-    opacity: 0;
-    pointer-events: none;
-    transition: var(--transition-1);
-  }
-  
-  .overlay.active {
-    opacity: 1;
-    pointer-events: all;
-  }
-  
-  /* Dropdown container styling */
-  .navbar-item.dropdown {
-    position: relative;
-  }
-  
-  .navbar-item .dropdown-menu {
-    position: absolute;
-    top: calc(100% + 5px); /* Place dropdown below the parent */
+  .language-switcher .dropdown-menu {
     left: 50%;
-    transform: translateX(-50%); /* Center align */
-    background-color: var(--vegas-gold);
-    padding: 10px 15px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    display: none; /* Initially hidden */
-    z-index: 1000;
+    transform: translateX(-50%); /* Center dropdown horizontally */
+    width: 100%; /* Full-width dropdown on mobile */
   }
-  
-  .dropdown-item a {
-    color: var(--white); /* Default text color */
-    text-decoration: none;
-    font-size: var(--fs-8);
-    padding: 5px 5px;
-    display: block;
+
+  .language-switcher .dropdown-item a {
+    text-align: center; /* Ensure text is centered on mobile */
   }
-  
-  .dropdown-item a:hover {
-    color: var(--phthalo-green-2); /* Highlight color */
-  }
-  
-  /* Add a downward arrow to indicate dropdown */
-  .navbar-item.dropdown > .navbar-link::after {
-    content: "▼";
-    font-size: 12px;
-    margin-left: 5px;
-    color: var(--white); /* Default arrow color */
-    transition: color 0.3s ease; /* Smooth transition */
-  }
-  
-  /* Active state for both text and arrow */
-  .navbar-item.dropdown > .navbar-link.active,
-  .navbar-item.dropdown > .navbar-link.active::after {
-    color: var(--satin-sheen-gold); /* Change both text and arrow color */
-  }
-  
-  /* For mobile screens */
-  @media (max-width: 768px) {
-    .navbar-item .dropdown-menu {
-      position: static; /* Dropdown is static for mobile */
-      transform: none;
-      box-shadow: none;
-      margin-top: 10px;
-      display: none;
-    }
-  
-    .navbar-item .dropdown-menu.active {
-      display: block; /* Show dropdown on mobile */
-    }
-  }
+}
+
+
+
+
+
+
+
+
+/* Underline Animation for Navbar Links */
+.navbar-link {
+  position: relative;
+  display: inline-block;
+  color: var(--white);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  padding-block: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Start with no width */
+  height: 2px;
+  background-color: var(--satin-sheen-gold);
+  transition: width 0.3s ease-in-out; /* Smooth underline transition */
+}
+
+.navbar-link:hover {
+  color: var(--satin-sheen-gold); /* Change text color on hover */
+}
+
+.navbar-link:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+/* Smooth Scale Animation for Dropdown Links */
+.dropdown-item a {
+  display: block;
+  color: var(--white);
+  text-decoration: none;
+  padding: 5px 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item a:hover {
+  transform: scale(1.05); /* Slightly enlarge link */
+  color: var(--phthalo-green-3);
+}
+
   
 
   /*-----------------------------------*\
@@ -1224,5 +1353,11 @@ textarea {
 
   .no-rtl {
     direction: ltr !important; /* Force LTR direction */
+    text-align: inherit !important; /* Inherit original alignment */
+  }
+
+
+  .rtl {
+    direction: rtl !important; /* Force LTR direction */
     text-align: inherit !important; /* Inherit original alignment */
   }

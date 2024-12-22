@@ -1615,17 +1615,15 @@ h3 {
   
   
   
-
-
-
-
-  
-
-
-  
   
   .about-us{
     background-size:contain; /* Ensures the image covers the entire section */
     background-position: center; 
     background-repeat: no-repeat;/* Centers the image */
   }
+
+  .no-rtl {
+    direction: ltr !important; /* Force LTR direction */
+    text-align: inherit !important; /* Inherit original alignment */
+  }
+  

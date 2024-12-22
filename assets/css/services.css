@@ -1794,3 +1794,9 @@ color: var(--satin-sheen-gold);
     margin-top: 0; /* Remove additional margin */
   }
 }
+
+
+.no-rtl {
+  direction: ltr !important; /* Force LTR direction */
+  text-align: inherit !important; /* Inherit original alignment */
+}

@@ -136,18 +136,7 @@ async function changeLanguage(lang) {
   }
 }
 
-smoothScrollEffect();
-if (condition) {
-  smoothScrollEffect ();
-  then (result => {
-    // Do something with the result
-  }
-  ).catch (error => {
-    // Handle the error
-  });
-} else {
-  console.error("Condition not met");
-}
+
 
 // Add event listeners to language buttons
 document.querySelectorAll(".dropdown-item button").forEach((button) => {

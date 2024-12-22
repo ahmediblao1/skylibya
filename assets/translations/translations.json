@@ -128,7 +128,24 @@
     "valuesTitle": "Our Values",
     "valuesText": "At Sky Libya, our core values drive every decision we make. We prioritize safety above all, ensuring every flight meets the highest standards of security and reliability. Our customer-centric approach focuses on delivering exceptional experiences, building long-lasting relationships, and understanding the unique needs of each client. Transparency and integrity remain at the heart of our operations, as we strive to be a trusted partner in aviation.",
     "aboutSectionTitle": "About Sky Libya",
-    "aboutSectionSubtitle": "Redefining Aviation Excellence"
+    "aboutSectionSubtitle": "Redefining Aviation Excellence",
+    "contactHeroTitle": "Contact Us",
+    "contactHeroSubtitle": "We’re here to assist you.",
+    "contactSectionTitle": "Let's Talk",
+    "contactInfoTitle": "Contact Information",
+    "contactPhoneLabel": "Phone:",
+    "contactEmailLabel": "Email:",
+    "contactAddressLabel": "Address:",
+    "contactPhoneNumber": "+218 (91) 2125 968",
+    "contactEmail": "info@skylibya.net",
+    "contactAddress": "MJI Airport, Tripoli, Libya",
+    "formNameLabel": "Name:",
+    "formEmailLabel": "Email Address:",
+    "formPhoneLabel": "Phone Number:",
+    "formMessageLabel": "Inquiry Details:",
+    "formSubmitButton": "Submit Message",
+    "imageCaption": "Personalized, expert management solutions for private and commercial aircraft owners, operators, and passengers."
+  
   },
   "ar": {
     "heroTitle": "ارتقِ بتجربتك مع مزيج من الراحة والفخامة والثقة",
@@ -258,8 +275,24 @@
     "growthStoryText": "منذ انطلاقنا، حققنا مكانة مرموقة في مجال الطيران. أدارت سكاي ليبيا أساطيل متنوعة ولبّت احتياجات عملاء من مختلف أنحاء العالم. بفضل خبرتنا في تشغيل الطائرات، من الصغيرة إلى الثقيلة، حققنا نجاحًا في الوصول إلى وجهات معقدة ومميزة عالميًا.",
     "valuesTitle": "قيمنا",
     "valuesText": "قيمنا هي الأساس في كل ما نقوم به. نضع السلامة دائمًا على رأس أولوياتنا، مع التركيز على بناء علاقات قوية وطويلة الأمد مع عملائنا. نعتمد الشفافية والنزاهة في كل جانب من عملياتنا لضمان تقديم تجربة طيران مميزة.",
-    "aboutSectionTitle": "عن سكاي ليبيا",
-    "aboutSectionSubtitle": "إعادة تعريف التميز في عالم الطيران"
+    "aboutSectionTitle": " سكاي ليبيا",
+    "aboutSectionSubtitle": "إعادة تعريف التميز في عالم الطيران",
+    "contactHeroTitle": "تواصل معنا",
+    "contactHeroSubtitle": "نحن هنا لمساعدتك.",
+    "contactSectionTitle": "لنكتشف فرص التعاون سوياً",
+    "contactInfoTitle": "معلومات التواصل",
+    "contactPhoneLabel": "الهاتف:",
+    "contactEmailLabel": "البريد الإلكتروني:",
+    "contactAddressLabel": "العنوان:",
+    "contactPhoneNumber": "+218 (91) 2125 968",
+    "contactEmail": "info@skylibya.net",
+    "contactAddress": "مطار معيتيقة الدولي، طرابلس، ليبيا",
+    "formNameLabel": ":الاسم",
+    "formEmailLabel": ":البريد الإلكتروني",
+    "formPhoneLabel": ":رقم الهاتف",
+    "formMessageLabel": ":تفاصيل الاستفسار" ,
+    "formSubmitButton": "إرسال",
+    "imageCaption": "حلول إدارة مخصصة وخبيرة لمالكي ومشغلي الطائرات الخاصة والتجارية والركاب."
  
   }
     
