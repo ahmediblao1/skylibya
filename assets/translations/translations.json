@@ -116,9 +116,19 @@
     "serviceAirAmbulanceTitle": "Air Ambulance",
     "serviceAirAmbulanceDescription": "Rapid, reliable, and medically equipped flights for emergency medical situations. Our air ambulance service is staffed with trained medical professionals and advanced equipment to provide life-saving care during transit. Available 24/7 for patient transport and critical care.",
     "serviceGlobalReachTitle": "Global Reach",
-    "serviceGlobalReachDescription": "Operating across international destinations with ease. Our extensive network and logistics expertise ensure smooth and efficient services, whether you're traveling or shipping across borders."
-
-    
+    "serviceGlobalReachDescription": "Operating across international destinations with ease. Our extensive network and logistics expertise ensure smooth and efficient services, whether you're traveling or shipping across borders.",
+    "aboutHeroTitle": "Sky Libya",
+    "aboutHeroSubtitle": "Discover our journey in redefining aviation excellence.",
+    "missionTitle": "Our Mission",
+    "missionText": "At Sky Libya, our mission is to redefine aviation services by offering tailored, reliable, and customer-focused solutions. We are committed to connecting the world through seamless and efficient flight experiences while upholding the highest standards of safety, professionalism, and innovation.",
+    "visionTitle": "Our Vision",
+    "visionText": "We envision a future where aviation becomes an effortless and enjoyable experience for everyone. Sky Libya aims to be a global leader in aviation services, delivering excellence in every aspect of our operations.",
+    "growthStoryTitle": "Our Growth Story",
+    "growthStoryText": "Since our inception, Sky Libya has grown to become a trusted name in the aviation industry. From managing diverse fleets to accommodating the unique needs of clients from across the globe, our journey has been marked by consistent success. With an extensive range of aircraft—from small pistons to large heavy jets—we have operated flights to some of the most challenging and prestigious destinations worldwide.",
+    "valuesTitle": "Our Values",
+    "valuesText": "At Sky Libya, our core values drive every decision we make. We prioritize safety above all, ensuring every flight meets the highest standards of security and reliability. Our customer-centric approach focuses on delivering exceptional experiences, building long-lasting relationships, and understanding the unique needs of each client. Transparency and integrity remain at the heart of our operations, as we strive to be a trusted partner in aviation.",
+    "aboutSectionTitle": "About Sky Libya",
+    "aboutSectionSubtitle": "Redefining Aviation Excellence"
   },
   "ar": {
     "heroTitle": "ارتقِ بتجربتك مع مزيج من الراحة والفخامة والثقة",
@@ -237,7 +247,20 @@
     "serviceAirAmbulanceTitle": "الإسعاف الجوي",
     "serviceAirAmbulanceDescription": "رحلات سريعة وموثوقة ومجهزة طبيًا للحالات الطبية الطارئة. تتميز خدمة الإسعاف الجوي لدينا بفريق طبي مدرب ومعدات متطورة لتقديم الرعاية المنقذة للحياة أثناء النقل. متوفرة على مدار الساعة لنقل المرضى والرعاية الحرجة.",
     "serviceGlobalReachTitle": "الانتشار العالمي",
-    "serviceGlobalReachDescription": "تشغيل عبر وجهات دولية بكل سهولة. تضمن شبكتنا الواسعة وخبرتنا اللوجستية خدمات سلسة وفعالة سواء كنت تسافر أو تشحن عبر الحدود."
+    "serviceGlobalReachDescription": "تشغيل عبر وجهات دولية بكل سهولة. تضمن شبكتنا الواسعة وخبرتنا اللوجستية خدمات سلسة وفعالة سواء كنت تسافر أو تشحن عبر الحدود.",
+    "aboutHeroTitle": "سكاي ليبيا",
+    "aboutHeroSubtitle": "رحلتنا في تقديم خدمات طيران بأعلى معايير الجودة.",
+    "missionTitle": "مهمتنا",
+    "missionText": "في سكاي ليبيا، نعمل على تغيير مفهوم خدمات الطيران من خلال تقديم حلول مخصصة وموثوقة تركز على احتياجات العملاء. هدفنا هو توفير رحلات سلسة وآمنة، مع الالتزام بالابتكار والاحترافية.",
+    "visionTitle": "رؤيتنا",
+    "visionText": "نتخيل مستقبلًا يصبح فيه الطيران تجربة سهلة وممتعة للجميع. نطمح إلى أن نكون في طليعة شركات الطيران عالميًا بتقديم خدمات عالية الجودة.",
+    "growthStoryTitle": "قصتنا",
+    "growthStoryText": "منذ انطلاقنا، حققنا مكانة مرموقة في مجال الطيران. أدارت سكاي ليبيا أساطيل متنوعة ولبّت احتياجات عملاء من مختلف أنحاء العالم. بفضل خبرتنا في تشغيل الطائرات، من الصغيرة إلى الثقيلة، حققنا نجاحًا في الوصول إلى وجهات معقدة ومميزة عالميًا.",
+    "valuesTitle": "قيمنا",
+    "valuesText": "قيمنا هي الأساس في كل ما نقوم به. نضع السلامة دائمًا على رأس أولوياتنا، مع التركيز على بناء علاقات قوية وطويلة الأمد مع عملائنا. نعتمد الشفافية والنزاهة في كل جانب من عملياتنا لضمان تقديم تجربة طيران مميزة.",
+    "aboutSectionTitle": "عن سكاي ليبيا",
+    "aboutSectionSubtitle": "إعادة تعريف التميز في عالم الطيران"
+ 
   }
     
   }

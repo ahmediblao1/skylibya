@@ -75,52 +75,55 @@
   <header class="header" data-header>
     <div class="container">
   
+      <!-- Logo -->
       <a href="/" class="logo">
         <img src="./assets/images/skylibya-logo.svg" width="150" height="48" alt="Sky Libya Logo">
       </a>
   
+      <!-- Navbar -->
       <nav class="navbar" data-navbar>
-  
         <div class="navbar-top">
           <a href="/" class="logo">
             <img src="./assets/images/skylibya-logo.svg" width="150" height="48" alt="Sky Libya Logo">
           </a>
-  
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
         </div>
   
         <ul class="navbar-list">
-  
-          <li class="navbar-item">
-            <a href="/" class="navbar-link" data-nav-link>Home</a>
-          </li>
-  
+          <li class="navbar-item"><a href="#home" class="navbar-link" data-nav-link data-translate="navHome">Home</a></li>
           <li class="navbar-item dropdown">
-            <a href="/services.html" class="navbar-link" data-dropdown-toggler>Services</a>
+            <a href="/services.html" class="navbar-link" data-dropdown-toggler data-translate="navServices">Services ▼</a>
             <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="/services.html">Charter Flights</a></li>
-              <li class="dropdown-item"><a href="/services.html">Cargo Transport</a></li>
-              <li class="dropdown-item"><a href="/services.html">Aircraft Maintenance</a></li>
-              <li class="dropdown-item"><a href="/services.html">Offshore Support</a></li>
-              <li class="dropdown-item"><a href="/services.html">Air Ambulance</a></li>
+              <li class="dropdown-item"><a href="/services.html" data-translate="navCharterFlights">Charter Flights</a></li>
+              <li class="dropdown-item"><a href="/services.html" data-translate="navCargoTransport">Cargo Transport</a></li>
+              <li class="dropdown-item"><a href="/services.html" data-translate="navAircraftMaintenance">Aircraft Maintenance</a></li>
+              <li class="dropdown-item"><a href="/services.html" data-translate="navAircraftSpareParts">Aircraft spare parts</a></li>
+              <li class="dropdown-item"><a href="/services.html" data-translate="navOffshoreSupport">Offshore Support</a></li>
+              <li class="dropdown-item"><a href="/services.html" data-translate="navAirAmbulance">Air Ambulance</a></li>
             </ul>
           </li>
-               
-  
-          <li class="navbar-item">
-            <a href="/about.html" class="navbar-link" data-nav-link>About us</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="/contact.html" class="navbar-link" data-nav-link>Contact</a>
-          </li>
-  
+          <li class="navbar-item"><a href="/about.html" class="navbar-link" data-nav-link data-translate="navAboutUs">About us</a></li>
+          <li class="navbar-item"><a href="/contact.html" class="navbar-link" data-nav-link data-translate="navContact">Contact</a></li>
         </ul>
-  
       </nav>
   
+     
+       <!-- Language Switcher -->
+       <div class="language-switcher dropdown" >
+        <button class="navbar-link btn-3" data-dropdown-toggler data-translate="languageDropdown">Language ▼</button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">
+            <button type="button" onclick="changeLanguage('en')">English</button>
+          </li>
+          <li class="dropdown-item">
+            <button type="button" onclick="changeLanguage('ar')">العربية</button>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Mobile Menu Button -->
       <div class="header-action">
         <button class="header-action-btn nav-open-btn" aria-label="menu" data-nav-toggler>
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -128,17 +131,16 @@
       </div>
   
       <div class="overlay" data-nav-toggler data-overlay></div>
-  
     </div>
   </header>
-
+  
 
   <main>
     <article>
   <!-- Hero -->
   <section class="et-hero-tabs"  style="background-image: url('./assets/images/footer-bg.png')">
-    <h2 class="section-title">About Sky Libya</h2>
-      <p class="section-subtitle">Redefining Aviation Excellence </p>
+    <h2 class="section-title" data-translate="aboutSectionTitle">About Sky Libya</h2>
+      <p class="section-subtitle" data-translate="aboutSectionSubtitle">Redefining Aviation Excellence </p>
       <img src="./assets/images/hero-banner.png" alt="Luxury airplane" class="abs-img">
   </section>
 
@@ -170,23 +172,23 @@
     <div class="container" style="background-image: url('./assets/images/map-bg\ \(3\).png')">
       <!-- Hero Section -->
       <div class="hero-section" >
-        <h1>Sky Libya</h1>
-        <p>Discover our journey in redefining aviation excellence.</p>
+        <h1 data-translate="aboutHeroTitle">Sky Libya</h1>
+        <p data-translate="aboutHeroSubtitle">Discover our journey in redefining aviation excellence.</p>
       </div>
   
       <!-- Mission and Vision -->
       <div class="mission-vision">
         <div class="mission">
-          <h2>Our Mission</h2>
-          <p>
+          <h2 data-translate="missionTitle">Our Mission</h2>
+          <p data-translate="missionText">
             At Sky Libya, our mission is to redefine aviation services by offering tailored, reliable, and customer-focused solutions.
             We are committed to connecting the world through seamless and efficient flight experiences while upholding the highest
             standards of safety, professionalism, and innovation.
           </p>
         </div>
         <div class="vision">
-          <h2>Our Vision</h2>
-          <p>
+          <h2 data-translate="visionTitle">Our Vision</h2>
+          <p data-translate="visionText">
             We envision a future where aviation becomes an effortless and enjoyable experience for everyone. Sky Libya aims to be a
             global leader in aviation services, delivering excellence in every aspect of our operations.
           </p>
@@ -197,8 +199,8 @@
       <div class="growth-story" >
         <img src="/assets/images/sky-3.png" alt="Sky Libya Plane" class="animated-plane" />
         <div class="growth-content">
-          <h2>Our Growth Story</h2>
-          <p>
+          <h2 data-translate="growthStoryTitle">Our Growth Story</h2>
+          <p data-translate="growthStoryText">
             Since our inception, Sky Libya has grown to become a trusted name in the aviation industry. From managing diverse fleets
             to accommodating the unique needs of clients from across the globe, our journey has been marked by consistent success.
             With an extensive range of aircraft—from small pistons to large heavy jets—we have operated flights to some of the most
@@ -210,8 +212,8 @@
       <!-- Values Section -->
 <div class="values-section" >
     <div class="values-content">
-      <h2>Our Values</h2>
-      <p>
+      <h2 data-translate="valuesTitle">Our Values</h2>
+      <p data-translate="valuesText">
         At Sky Libya, our core values drive every decision we make. We prioritize safety above all, ensuring every flight
         meets the highest standards of security and reliability. Our customer-centric approach focuses on delivering
         exceptional experiences, building long-lasting relationships, and understanding the unique needs of each client.
@@ -220,101 +222,106 @@
     </div>
     <img src="/assets/images/sky-2.png" alt="Sky Libya Plane" class="animated-plane-r  right-plane" />
   </div>
-  
-    </div>
+
+  </div>
   </section>
+
   
-  <section class="trust-section" aria-label="Why Clients Trust Us" 
-  style="background-image: url('./assets/images/bg-sk\ \(2\).png')">
-    <div class="container">
-  
-      <!-- Title and Subtitle -->
-      <div class="trust-header">
-        <p class="trust-subtitle">
-          <ion-icon name="airplane-outline" class="trust-icon-plane" aria-hidden="true"></ion-icon> 
-          Why Sky Libya Aviation
-        </p>
-        <h2 class="trust-title">
-          <span class="light-text">10 reasons</span> why clients trust us.
-        </h2>
-      </div>
-  
-      <!-- Grid Content -->
-      <div class="trust-grid">
-        <div class="trust-card">
-          <ion-icon name="person-outline" class="trust-icon" aria-hidden="true"></ion-icon>
-          <h3 class="trust-subtitle">Expertise</h3>
-          <p class="trust-text">Experienced professionals managing every aspect of aviation services.</p>
+ <!-- 
+        - #why us
+      -->
+
+      <section class="trust-section" aria-label="Why Clients Trust Us"
+      style="background-image: url('./assets/images/bg-sk\ \(2\).png')">
+        <div class="container">
+      
+          <!-- Title and Subtitle -->
+          <div class="trust-header" style="background-image: url('./assets/images/map-bg\ \(3\).png')" >
+            <p class="trust-subtitle">
+              <ion-icon name="airplane-outline" class="trust-icon-plane" aria-hidden="true" data-translate="whyTrustUsTitle"></ion-icon> 
+              Why Sky Libya Aviation
+            </p>
+            <h2 class="trust-title">
+              <span class="light-text" data-translate="whyTrustUsSubtitle">10 reasons</span> why clients trust us.
+            </h2>
+          </div>
+      
+          <!-- Grid Content -->
+          <div class="trust-grid" style="background-image: url('./assets/images/map-bg\ \(3\).png')" >
+            <div class="trust-card">
+              <ion-icon name="person-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle" data-translate="expertiseSubtitle">Expertise</h3>
+              <p class="trust-text" data-translate="expertiseText">Experienced professionals managing every aspect of aviation services.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="pricetags-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle" data-translate="costEfficiencySubtitle">Cost Efficiency</h3>
+              <p class="trust-text" data-translate="costEfficiencyText">Offering cost-effective solutions without compromising quality.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="time-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle" data-translate="timeSavingsSubtitle">Time Savings</h3>
+              <p class="trust-text" data-translate="timeSavingsText">Streamlined processes to save your valuable time.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="shield-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle" data-translate="safetyFirstSubtitle">Safety First</h3>
+              <p class="trust-text" data-translate="safetyFirstText">Adhering to the highest safety standards in the aviation industry.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="construct-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle" data-translate="maintenanceSubtitle">Maintenance</h3>
+              <p class="trust-text" data-translate="maintenanceText">World-class maintenance to keep aircraft in top condition.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="document-text-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle" data-translate="regulatoryComplianceSubtitle">Regulatory Compliance</h3>
+              <p class="trust-text" data-translate="regulatoryComplianceText">Ensuring full compliance with aviation regulations.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="earth-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle" data-translate="globalReachSubtitle">Global Reach</h3>
+              <p class="trust-text" data-translate="globalReachText">Operating across international destinations with ease.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="cash-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle" data-translate="transparentPricingSubtitle">Transparent Pricing</h3>
+              <p class="trust-text" data-translate="transparentPricingText">No hidden fees, clear and honest pricing.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="people-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle" data-translate="customerCentricSubtitle">Customer-Centric</h3>
+              <p class="trust-text" data-translate="customerCentricText">Services tailored to individual customer needs and preferences.</p>
+            </div>
+      
+            <div class="trust-card">
+              <ion-icon name="speedometer-outline" class="trust-icon" aria-hidden="true"></ion-icon>
+              <h3 class="trust-subtitle" data-translate="efficiencySubtitle">Efficiency</h3>
+              <p class="trust-text" data-translate="efficiencyText">Fast and reliable operations for a smooth experience.</p>
+            </div>
+          </div>
+      
+          <!-- Footer Summary and Button -->
+          <div class="trust-footer">
+            <p class="trust-summary" data-translate="whyTrustUsDescription">
+              Partner with Sky Libya for comprehensive aviation solutions tailored to your needs.<br>
+              Experience seamless travel, reliable cargo services,<br>
+              and exceptional customer care.
+            </p>
+            <a href="#contact" class="btn-1 btn-primary-1" data-translate="bookConsultation">Book A Consultation</a>
+          </div>
+      
         </div>
-  
-        <div class="trust-card">
-          <ion-icon name="pricetags-outline" class="trust-icon" aria-hidden="true"></ion-icon>
-          <h3 class="trust-subtitle">Cost Efficiency</h3>
-          <p class="trust-text">Offering cost-effective solutions without compromising quality.</p>
-        </div>
-  
-        <div class="trust-card">
-          <ion-icon name="time-outline" class="trust-icon" aria-hidden="true"></ion-icon>
-          <h3 class="trust-subtitle">Time Savings</h3>
-          <p class="trust-text">Streamlined processes to save your valuable time.</p>
-        </div>
-  
-        <div class="trust-card">
-          <ion-icon name="shield-outline" class="trust-icon" aria-hidden="true"></ion-icon>
-          <h3 class="trust-subtitle">Safety First</h3>
-          <p class="trust-text">Adhering to the highest safety standards in the aviation industry.</p>
-        </div>
-  
-        <div class="trust-card">
-          <ion-icon name="construct-outline" class="trust-icon" aria-hidden="true"></ion-icon>
-          <h3 class="trust-subtitle">Maintenance</h3>
-          <p class="trust-text">World-class maintenance to keep aircraft in top condition.</p>
-        </div>
-  
-        <div class="trust-card">
-          <ion-icon name="document-text-outline" class="trust-icon" aria-hidden="true"></ion-icon>
-          <h3 class="trust-subtitle">Regulatory Compliance</h3>
-          <p class="trust-text">Ensuring full compliance with aviation regulations.</p>
-        </div>
-  
-        <div class="trust-card">
-          <ion-icon name="earth-outline" class="trust-icon" aria-hidden="true"></ion-icon>
-          <h3 class="trust-subtitle">Global Reach</h3>
-          <p class="trust-text">Operating across international destinations with ease.</p>
-        </div>
-  
-        <div class="trust-card">
-          <ion-icon name="cash-outline" class="trust-icon" aria-hidden="true"></ion-icon>
-          <h3 class="trust-subtitle">Transparent Pricing</h3>
-          <p class="trust-text">No hidden fees, clear and honest pricing.</p>
-        </div>
-  
-        <div class="trust-card">
-          <ion-icon name="people-outline" class="trust-icon" aria-hidden="true"></ion-icon>
-          <h3 class="trust-subtitle">Customer-Centric</h3>
-          <p class="trust-text">Services tailored to individual customer needs and preferences.</p>
-        </div>
-  
-        <div class="trust-card">
-          <ion-icon name="speedometer-outline" class="trust-icon" aria-hidden="true"></ion-icon>
-          <h3 class="trust-subtitle">Efficiency</h3>
-          <p class="trust-text">Fast and reliable operations for a smooth experience.</p>
-        </div>
-      </div>
-  
-      <!-- Footer Summary and Button -->
-      <div class="trust-footer">
-        <p class="trust-summary">
-          Partner with Sky Libya for comprehensive aviation solutions tailored to your needs.<br>
-          Experience seamless travel, reliable cargo services,<br>
-          and exceptional customer care.
-        </p>
-        <a href="/contact.html" class="btn-1 btn-primary-1">Book A Consultation</a>
-      </div>
-  
-    </div>
-    
-  </section>
+        
+      </section>
   
 
 </article>
@@ -323,8 +330,6 @@
 
 
 
-
- 
   <!-- 
     - #FOOTER
   -->
@@ -340,7 +345,7 @@
             <img src="./assets/images/skylibya-logo.svg" width="200" height="200" alt="Sky Libya logo">
           </a>
 
-          <p class="footer-text">
+          <p class="footer-text" data-translate="footerText">
             sky libya Aviation save your time and give you comfort.
           </p>
 
@@ -349,27 +354,27 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Explore</p>
+            <p class="footer-list-title" data-translate="exploreTitle">Explore</p>
           </li>
 
           <li>
-            <a href="/about.html" class="footer-link">About</a>
+            <a href="/about.html" class="footer-link" data-translate="aboutLink">About</a>
           </li>
 
           <li>
-            <a href="/contact.html" class="footer-link">Contact</a>
+            <a href="/contact.html" class="footer-link" data-translate="contactLink">Contact</a>
           </li>
 
           <li>
-            <a href="/contact.html" class="footer-link">Destinations</a>
+            <a href="/contact.html" class="footer-link" data-translate="destinationsLink">Destinations</a>
           </li>
 
           <li>
-            <a href="/contact.html" class="footer-link">Flight Planning</a>
+            <a href="/contact.html" class="footer-link" data-translate="flightPlanningLink">Flight Planning</a>
           </li>
 
           <li>
-            <a href="/contact.html" class="footer-link">Book Flight</a>
+            <a href="/contact.html" class="footer-link" data-translate="bookFlightLink">Book Flight</a>
           </li>
 
         </ul>
@@ -377,27 +382,27 @@
         <ul class="footer-list">  
 
           <li>
-            <p class="footer-list-title">Services</p>
+            <p class="footer-list-title" data-translate="servicesTitlefooter">Services</p>
           </li>
 
           <li>
-            <a href="/services.html" class="footer-link">Charter Flights</a>
+            <a href="/services.html" class="footer-link" data-translate="charterFlightsLink">Charter Flights</a>
           </li>
 
           <li>
-            <a href="/services.html" class="footer-link">Cargo Transport</a>
+            <a href="/services.html" class="footer-link" data-translate="cargoTransportLink">Cargo Transport</a>
           </li>
 
           <li>
-            <a href="/services.html" class="footer-link">Aircraft Maintenance</a>
+            <a href="/services.html" class="footer-link" data-translate="aircraftMaintenanceLink">Aircraft Maintenance</a>
           </li>
 
           <li>
-            <a href="/services.html" class="footer-link">Offshore Support</a>
+            <a href="/services.html" class="footer-link" data-translate="offshoreSupportLink">Offshore Support</a>
           </li>
 
           <li>
-            <a href="/services.html" class="footer-link">Air Ambulance</a>
+            <a href="/services.html" class="footer-link" data-translate="airAmbulanceLink">Air Ambulance</a>
           </li>
 
         </ul>
@@ -405,27 +410,27 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Contact</p>
+            <p class="footer-list-title" data-translate="contactTitle">Contact</p>
           </li>
 
           <li class="footer-list-item">
             <ion-icon name="mail" aria-hidden="true"></ion-icon>
-            <a href="mailto:info@skylibya.net" class="footer-link">info@skylibya.net</a>
+            <a href="mailto:info@skylibya.net" class="footer-link" data-translate="emailLink">info@skylibya.net</a>
           </li>
 
           <li class="footer-list-item">
             <ion-icon name="call" aria-hidden="true"></ion-icon>
-            <a href="tel:+218910215599" class="footer-link">+218 910 215 599</a>
+            <a href="tel:+218910215599" class="footer-link" data-translate="phoneLink">+218 910 215 599</a>
           </li>
         
           <li class="footer-list-item">
             <ion-icon name="logo-whatsapp"></ion-icon>
-            <a href="https://wa.me/218910215588" class="footer-link" target="_blank">+218 910 215 588</a>
+            <a href="https://wa.me/218910215588" class="footer-link" target="_blank" data-translate="whatsappLink">+218 910 215 588</a>
           </li>
         
           <li class="footer-list-item">
             <ion-icon name="location" aria-hidden="true"></ion-icon>
-            <address class="address">
+            <address class="address" data-translate="address">
               MJI Airport, Tripoli, Libya
             </address>
           </li>
@@ -437,7 +442,7 @@
 
       <div class="footer-bottom">
 
-        <p class="copyright">
+        <p class="copyright" data-translate="copyright">
           Copyright 2024 by Sky Libya.
         </p>
 
