@@ -310,6 +310,8 @@ const observer = new IntersectionObserver(
   { threshold: 0.1 } // Trigger when 10% of the plane is visible
 );
 
+localStorage.setItem("visited", "true");
+
 // Attach the observer to the plane container
 observer.observe(planeContainer);
 

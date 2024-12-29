@@ -20,9 +20,12 @@
      */
   
     --british-racing-green: hsl(144, 45%, 19%);
-    --phthalo-green-1: hsl(143, 54%, 9%);
-    --phthalo-green-2: hsl(144, 51%, 15%);
-    --phthalo-green-3: hsl(144, 54%, 11%);
+    /* --phthalo-green-1: hsl(143, 54%, 9%);
+  --phthalo-green-2: hsl(143, 51%, 15%);
+  --phthalo-green-3: hsl(144, 54%, 11%); */
+  --phthalo-green-1: hsl(220, 54%, 9%);
+  --phthalo-green-2: hsl(220, 51%, 15%);
+  --phthalo-green-3: hsl(220, 54%, 11%);
     --phthalo-green_30: hsla(144, 51%, 15%, 0.3);
     --morning-blue: hsl(143, 11%, 58%);
     --satin-sheen-gold: hsl(49, 54%, 43%);
@@ -875,19 +878,19 @@ textarea {
     margin-block-start: 15px;
   }
   
-  .social-link {
-    background-color: var(--british-racing-green);
-    color: var(--white);
-    padding: 12px;
-    border-radius: var(--radius-circle);
-    transition: var(--transition-1);
-  }
-  
-  .social-link:is(:hover, :focus) {
-    background-color: var(--white);
-    color: var(--satin-sheen-gold);
-  }
-  
+.social-link {
+  background-color: var(--phthalo-green-3);
+  color: var(--white);
+  padding: 12px;
+  border-radius: var(--radius-circle);
+  transition: var(--transition-1);
+}
+
+.social-link:is(:hover, :focus) {
+  background-color: var(--white);
+  color: var(--phthalo-green-3);
+}
+
   
   
   

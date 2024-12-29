@@ -1,5 +1,6 @@
 {
   "en": {
+    "skylibya": "Sky Libya Aviation",
     "heroTitle": "Fly with Confidence, Comfort, AND LUXURY",
     "heroSubtitle": "Elevate your travel experience with our premier charter flights, reliable cargo services, and world-class aviation solutions.",
     "bookFlightButton": "Book a Flight",
@@ -65,7 +66,7 @@
     "subscribeNowTitle": "Want to know about our offers first?",
     "emailPlaceholder": "Enter email address",
     "subscribeButton": "Subscribe",
-    "footerText": "Sky Libya Aviation saves your time and gives you comfort.",
+    "footerText": "Sky Libya - Your Trusted Partner in Aviation",
     "exploreTitle": "Explore",
     "aboutLink": "About",
     "contactLink": "Contact",
@@ -83,7 +84,7 @@
     "phoneLink": "+218 910 215 599",
     "whatsappLink": "+218 910 215 588",
     "address": "MJI Airport, Tripoli, Libya",
-    "copyright": "Copyright 2024 by Sky Libya.",
+    "copyright": "Copyright © 2024 Sky Libya Aviation. All Rights Reserved.",
     "navHome": "Home",
     "navServices": "Services ▼",
     "navCharterFlights": "Charter Flights",
@@ -213,7 +214,7 @@
     "subscribeNowTitle": "هل تريد معرفة عروضنا أولاً؟",
     "emailPlaceholder": "أدخل عنوان بريدك الإلكتروني",
     "subscribeButton": "اشترك",
-    "footerText": "سكاي ليبيا للطيران توفر وقتك وتمنحك الراحة.",
+    "footerText": "سكاي ليبيا - شريكك الموثوق في مجال الطيران",
     "exploreTitle": "استكشاف",
     "aboutLink": "من نحن",
     "contactLink": "اتصل بنا",
@@ -231,7 +232,7 @@
     "phoneLink": "+218 910 215 599",
     "whatsappLink": "+218 910 215 588",
     "address": "مطار معيتيقة الدولي، طرابلس، ليبيا",
-    "copyright": "جميع الحقوق محفوظة© Sky Libya 2024",
+    "copyright": "سكاي ليبيا للطيران © 2024 . جميع الحقوق محفوظة.",
     "navHome": "الرئيسية",
     "navServices": "▼ الخدمات ",
     "navCharterFlights": "الطيران الخاص",
@@ -292,7 +293,8 @@
     "formPhoneLabel": ":رقم الهاتف",
     "formMessageLabel": ":تفاصيل الاستفسار" ,
     "formSubmitButton": "إرسال",
-    "imageCaption": "حلول إدارة مخصصة وخبيرة لمالكي ومشغلي الطائرات الخاصة والتجارية والركاب."
+    "imageCaption": "حلول إدارة مخصصة وخبيرة لمالكي ومشغلي الطائرات الخاصة والتجارية والركاب.",
+    "skylibya": "سكاي ليبيا للطيران"
  
   }
     
